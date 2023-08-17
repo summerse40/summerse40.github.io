@@ -1,85 +1,53 @@
 window.onload = function() {
-        fetch('about.txt')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById('about-content').innerText = data;
-            })
-            .catch(error => {
-                console.log('There was a problem with the fetch operation:', error.message);
-            });
-    }
-    // script.js
-    // script.js
-    // script.js
-    // script.js
-    // script.js
-    // script.js
-const carousel = document.querySelector('.carousel');
-const prevButton = document.querySelector('.carousel-prev');
-const nextButton = document.querySelector('.carousel-next');
-
-let currentSlide = 0;
-let projectsData = [];
-
-async function fetchProjects() {
-    const token = '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'; // Replace with your personal access token
-    try {
-        const response = await fetch('https://api.github.com/users/summerse40/repos', {
-            headers: {
-                Authorization: `Bearer ${token}`
+    fetch('about.txt')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
             }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById('about-content').innerText = data;
+        })
+        .catch(error => {
+            console.log('There was a problem with the fetch operation:', error.message);
         });
-        const data = await response.json();
+}
 
-        return data;
-    } catch (error) {
-        console.error('Error fetching projects:', error);
-        return [];
+let currentRepoIndex = 0;
+let repos = [];
+
+function fetchRepos() {
+    const username = 'summerse40'; // Replace with desired GitHub username
+    fetch(`https://api.github.com/users/${username}/repos`)
+        .then(response => response.json())
+        .then(data => {
+            repos = data;
+            displayRepo();
+        });
+}
+
+function displayRepo() {
+    const repo = repos[currentRepoIndex];
+    if (repo) {
+        document.getElementById('repo-name').textContent = repo.name;
+        document.getElementById('repo-description').textContent = repo.description || "No description provided.";
     }
 }
 
-async function displayProjects() {
-    const carousel = document.querySelector('.carousel');
-    carousel.innerHTML = ''; // Clear previous content
-
-    const projectContainer = document.createElement('div');
-    projectContainer.classList.add('project-container');
-
-    const projectDescription = document.createElement('p');
-    projectDescription.textContent = projectsData[currentSlide].description || 'No description available.';
-
-    // Create the "Navigate to GitHub" link
-    const navigateLink = document.createElement('a');
-    navigateLink.href = projectsData[currentSlide].html_url;
-    navigateLink.textContent = 'Navigate to GitHub';
-    navigateLink.target = '_blank';
-    navigateLink.rel = 'noopener noreferrer';
-
-    projectContainer.appendChild(projectDescription);
-    projectContainer.appendChild(navigateLink);
-
-    carousel.appendChild(projectContainer);
+function previousRepo() {
+    currentRepoIndex = Math.max(currentRepoIndex - 1, 0);
+    displayRepo();
 }
 
-async function init() {
-    projectsData = await fetchProjects();
-    displayProjects();
+function nextRepo() {
+    currentRepoIndex = Math.min(currentRepoIndex + 1, repos.length - 1);
+    displayRepo();
 }
 
-prevButton.addEventListener('click', () => {
-    currentSlide = (currentSlide - 1 + projectsData.length) % projectsData.length;
-    displayProjects();
-});
+// Fetch the repositories on page load.
+fetchRepos();
 
-nextButton.addEventListener('click', () => {
-    currentSlide = (currentSlide + 1) % projectsData.length;
-    displayProjects();
-});
 
 init();
 // List of skills
