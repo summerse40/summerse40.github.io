@@ -414,7 +414,7 @@
             margin: 50px auto;
             padding: 20px;
             border-radius: 50px;
-            box-shadow: 0 4px 8px #001F3F;
+            box-shadow: 0 15px 20px #001F3F;
             background-color: #D1A5A4;
         }
         
@@ -516,6 +516,11 @@
             border: 1px solid #ccc;
             padding: 20px;
             position: relative;
+            background-color: #FF6B6B;
+            box-shadow: 0 15px 20px #001F3F;
+        }
+        
+        .carousel:hover {
             background-color: #D1A5A4;
         }
         
