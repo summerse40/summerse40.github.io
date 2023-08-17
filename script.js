@@ -27,8 +27,13 @@ let currentSlide = 0;
 let projectsData = [];
 
 async function fetchProjects() {
+    const token = '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'; // Replace with your personal access token
     try {
-        const response = await fetch('https://api.github.com/users/summerse40/repos');
+        const response = await fetch('https://api.github.com/users/summerse40/repos', {
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        });
         const data = await response.json();
 
         return data;
@@ -38,20 +43,27 @@ async function fetchProjects() {
     }
 }
 
-function displayProjects() {
+async function displayProjects() {
+    const carousel = document.querySelector('.carousel');
     carousel.innerHTML = ''; // Clear previous content
 
-    const projectCard = document.createElement('div');
-    projectCard.classList.add('project-card');
-    projectCard.innerHTML = `
-    <div class="iframe-container">
-      <iframe src="${projectsData[currentSlide].html_url}" title="${projectsData[currentSlide].name}" class="borderless-iframe"></iframe>
-    </div>
-    <p>${projectsData[currentSlide].description || 'No description available.'}</p>
-    <a href="${projectsData[currentSlide].html_url}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-  `;
+    const projectContainer = document.createElement('div');
+    projectContainer.classList.add('project-container');
 
-    carousel.appendChild(projectCard);
+    const projectDescription = document.createElement('p');
+    projectDescription.textContent = projectsData[currentSlide].description || 'No description available.';
+
+    // Create the "Navigate to GitHub" link
+    const navigateLink = document.createElement('a');
+    navigateLink.href = projectsData[currentSlide].html_url;
+    navigateLink.textContent = 'Navigate to GitHub';
+    navigateLink.target = '_blank';
+    navigateLink.rel = 'noopener noreferrer';
+
+    projectContainer.appendChild(projectDescription);
+    projectContainer.appendChild(navigateLink);
+
+    carousel.appendChild(projectContainer);
 }
 
 async function init() {
@@ -70,7 +82,6 @@ nextButton.addEventListener('click', () => {
 });
 
 init();
-
 // List of skills
 const skills = [
     "java",
@@ -109,19 +120,3 @@ window.addEventListener('scroll', function() {
 
     lastScrollTop = scrollTop;
 });
-
-const container = document.querySelector(".falling-flowers-container");
-
-const numFlowers = 50; // Number of flowers to generate
-
-for (let i = 0; i < numFlowers; i++) {
-    const flower = document.createElement("div");
-    flower.classList.add("falling-flower");
-
-    const randomX = Math.random() * 100; // Random X position (percentage)
-    const randomDelay = Math.random() * 5; // Random delay for animation
-    flower.style.left = `${randomX}%`;
-    flower.style.animationDelay = `${randomDelay}s`;
-
-    container.appendChild(flower);
-}

@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Emily Summers</title>
 </head>
 
 <body>
+
     <header>
         <div class="container">
             <h1>Emily Summers</h1>
@@ -18,6 +20,10 @@
                     <li><a href="#about-" class="nav-link">About Me</a></li>
                     <li><a href="#sectionC" class="nav-link">Portfolio</a></li>
                     <li><a href="#skeel" class="nav-link">Skills</a></li>
+                    <li><a href="#publicity" class="nav-link">Publicity</a></li>
+                    <li><a href="#CV" class="nav-link">CV</a></li>
+
+
                 </ul>
             </nav>
         </div>
@@ -28,16 +34,14 @@
 
 
     <section class="about">
-        <div class="falling-flowers">
 
-            <div class="sectionH">
-                <pre id="about-"></pre>
+        <div class="sectionH">
+            <pre id="about-"></pre>
 
-                <h2>About Me</h2>
-            </div>
-            <div class="containers">
-                <pre id="about-content"></pre>
-            </div>
+            <h2>About Me</h2>
+        </div>
+        <div class="containers">
+            <pre id="about-content"></pre>
         </div>
     </section>
 
@@ -52,9 +56,10 @@
             <div class="carousel">
                 <!-- GitHub project cards will be added here -->
             </div>
-            <button class="carousel-prev" type="button">&#8249;</button>
-            <button class="carousel-next" type="button">&#8250;</button>
+
         </div>
+        <button class="carousel-prev" type="button">&#8249;</button>
+        <button class="carousel-next" type="button">&#8250;</button>
     </section>
 
 
@@ -128,8 +133,90 @@
 
                 </ul>
             </div>
+            <div class="skill-card">
+                <h3> Etc. </h3>
+                <ul>
+                    <li>RESTful APIs</li>
+                    <li>ASP.NET</li>
+                    <li>CMS</li>
+
+
+                </ul>
+            </div>
         </div>
+
     </div>
+
+
+    <section class="public-mentions">
+        <div class="containerz">
+            <pre id="publicity"></pre>
+
+            <h2>Public Mentions</h2>
+            <div class="mention">
+                <blockquote>
+                    <p id="quote3">"Proud of our study coordinators, Alex Slombodian and Emily Summers presenting at the Summer Undergraduate Research Program (SURP) today at UWF! Way to go! .</p>
+                    <a href="https://m.facebook.com/UWFCT/photos/415852052363720/?locale=hi_IN" target="_blank">
+                    "Check it out here!"
+                    </a>
+
+                </blockquote>
+                <br>
+                <p id="quote2"> University of West Florida, Spring Commencement, May 2023</p>
+                <cite><a href="https://uwf.edu/media/university-of-west-florida/offices/commencement/programs-pdf/CommencementProgram_Spring2023_Digital_.pdf" target="_blank">- Check it out here! </a></cite>
+                <blockquote>
+                    <br>
+                    <p id="quote1"> "Students Named to All-Florida Academic Team"
+                    </p>
+                    <a href="https://www.thedestinlog.com/story/lifestyle/2017/03/02/students-named-to-all-florida-academic-team/22043304007/" target="_blank">
+                        "Check it out here! "
+                    </a>
+                </blockquote>
+            </div>
+
+
+
+        </div>
+    </section>
+    <section class="cv-section">
+        <pre id="CV"></pre>
+
+        <h2>My CV</h2>
+
+        <div class="pdf-download">
+            <a href="CV.pdf" download> Download PDF </a>
+        </div>
+
+        <div class="pdf-container">
+            <embed class="embedded-pdf" src="CV.pdf" type="application/pdf" title="Embedded PDF">
+        </div>
+
+    </section>
+
+    <section class="social-media">
+        <div class="containerz">
+            <h2>Follow Me</h2>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/emily-summers-02b741273/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                    <span class="sr-only">LinkedIn</span>
+                    <!-- Descriptive text for accessibility -->
+                </a>
+                <a href="https://www.instagram.com/summerselyrose/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                    <span class="sr-only">Instagram</span>
+                    <!-- Descriptive text for accessibility -->
+                </a>
+                <a href="https://github.com/summerse40" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    <span class="sr-only">GitHub</span>
+                    <!-- Descriptive text for accessibility -->
+                    <!-- Descriptive text for accessibility -->
+                </a>
+                <!-- Add more social media links here -->
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
     <footer>
         <section class="contact">

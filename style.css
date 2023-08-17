@@ -1,467 +1,550 @@
-    /* Reset default margins and padding */
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: Georgia, Times, "Times New Roman", serif;
-        line-height: 1.6;
-        position: relative;
-        text-align: center;
-        background-color: #F5F5F5
-    }
-    
-    #myParagraph {
-        font-size: 15px;
-    }
-    
-    .overlap-image {
-        position: absolute;
-        top: 200px;
-        /* Set the desired top position */
-        left: 50%;
-        bottom: 0;
-        z-index: 2;
-        margin-bottom: -50x;
-        /* Center horizontally */
-        transform: translateX(-50%);
-        /* Adjust for horizontal centering */
-    }
-    
-    .overlap-image img {
-        width: 250px;
-        height: auto;
-        border-radius: 50%;
-        border: 5px solid #FFD700;
-        box-shadow: 0 15px 20px #FF6B6B;
-        ;
-        z-index: 2;
-    }
-    
-    #footer {
-        margin-bottom: 20px;
-        margin-top: 20px;
-        background-color: #001F3F;
-        /* Space below */
-    }
-    /* Reset default margin and padding */
-    
-    body,
-    h1,
-    h2 {
-        margin: 0;
-        padding: 0;
-    }
-    
-    p {
-        font-size: 2px;
-    }
-    
-    header {
-        position: relative;
-        /* Ensure header is a positioned ancestor */
-    }
-    
-    .container h1 {
-        margin: 0;
-        font-size: 2em;
-    }
-    
-    .container p {
-        margin: 5px 0;
-    }
-    
-    nav ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
-    
-    nav ul li {
-        list-style: none;
-    }
-    
-    nav ul li a {
-        font-family: Verdana, Geneva, sans-serif;
-        color: white;
-        text-decoration: none;
-        padding: 5px 10px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-    }
-    
-    nav ul li a:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-    }
-    /* For spacing the "About Me" section or any section below header */
-    
-    #about- {
-        padding-top: 80px;
-        /* Adjust this to create more space between the profile image and "About Me" section */
-    }
-    
-    #about-content {
-        font-family: Verdana, Geneva, sans-serif;
-        overflow: hidden;
-        /* Hide overflowing content */
-        white-space: pre-line;
-        width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
-        /* or any desired width */
-        word-wrap: break-word;
-        /* Ensures that the words wrap onto the next line if they don't fit */
-        overflow-wrap: break-word;
-        /* Modern approach to word-wrapping */
-        font-size: 14px;
-        /* Adjust if needed */
-    }
-    /* Tablets */
-    
-    @media (max-width: 768px) {
-        #about- {
-            padding-top: 25px;
-            /* Adjust this to create more space between the profile image and "About Me" section */
+        /* Reset default margins and padding */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        nav ul {
-            flex-direction: column;
-            gap: 10px;
+        
+        .pdf-download {
+            display: none;
+            /* Hide the download link */
         }
-        .container {
-            margin-top: -10px;
+        
+        .signature {
+            font-family: 'Great Vibes', cursive;
         }
-        .overlap-image img {
-            width: 120px;
+        
+        body {
+            font-family: Georgia, Times, "Times New Roman", serif;
+            line-height: 1.6;
+            position: relative;
+            text-align: center;
+            background-color: #F5F5F5
         }
-        .container h1 {
-            font-size: 1.5em;
+        
+        #myParagraph {
+            font-size: 15px;
         }
-        .containers {
-            border-radius: 40px;
-            /* reduce the border-radius for smaller screens */
-            padding: 15px;
-            margin: 8px;
-            height: auto;
-            /* Make the height determined by the content */
-            min-height: 200px;
-            /* Optional: set a minimum height if needed */
-        }
-    }
-    /* Mobile phones */
-    
-    @media (max-width: 480px) {
-        #about- {
-            padding-top: 0px;
-            /* Adjust this to create more space between the profile image and "About Me" section */
-        }
-        #about-content {
-            padding: 20px;
-            width: 110%;
-            /* Adjust this if needed */
-            max-width: 800px;
-            /* Set a maximum width for large screens */
-            margin: 0%;
-            /* Center the container on larger screens */
-            word-wrap: break-word;
-            /* This ensures long words don't overflow */
-            font-size: 3px;
-            /* Adjust if needed */
-        }
+        
         .overlap-image {
             position: absolute;
-            top: 190px;
+            top: 200px;
             /* Set the desired top position */
             left: 50%;
+            bottom: 0;
             z-index: 2;
+            margin-bottom: -50x;
             /* Center horizontally */
             transform: translateX(-50%);
             /* Adjust for horizontal centering */
         }
-        #header {
-            margin-bottom: 0px;
-            margin-top: 0px;
+        
+        .carousel-prev,
+        .carousel-next {
+            font-size: 25px;
+            font-weight: 900;
+            color: #001F3F;
+            /* Text color */
+            background-color: #FFD700;
+            /* Background color */
+            border: #FF6B6B;
+            border-width: 1cap;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
         }
+        
+        .overlap-image img {
+            width: 250px;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid #FFD700;
+            box-shadow: 0 15px 20px #FF6B6B;
+            ;
+            z-index: 2;
+        }
+        
+        #footer {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            background-color: #001F3F;
+            /* Space below */
+        }
+        /* Reset default margin and padding */
+        
+        h1 {
+            margin: 0;
+            padding-top: 20px;
+        }
+        
+        body,
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+        
+        p {
+            font-size: 2px;
+        }
+        
+        header {
+            position: relative;
+            /* Ensure header is a positioned ancestor */
+        }
+        
         .container h1 {
-            font-size: 1.2em;
+            margin: 0;
+            font-size: 2em;
         }
+        
+        .container p {
+            margin: 5px 0;
+        }
+        
         nav ul {
-            gap: 5px;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
+        
+        nav ul li {
+            list-style: none;
+        }
+        
+        nav ul li a {
+            font-family: Verdana, Geneva, sans-serif;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        /* For spacing the "About Me" section or any section below header */
+        
+        #about- {
+            padding-top: 80px;
+            /* Adjust this to create more space between the profile image and "About Me" section */
+        }
+        
+        #about-content {
+            font-family: Verdana, Geneva, sans-serif;
+            overflow: hidden;
+            /* Hide overflowing content */
+            white-space: pre-line;
+            width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+            /* or any desired width */
+            word-wrap: break-word;
+            /* Ensures that the words wrap onto the next line if they don't fit */
+            overflow-wrap: break-word;
+            /* Modern approach to word-wrapping */
+            font-size: 14px;
+            /* Adjust if needed */
+        }
+        /* Tablets */
+        
+        .public-mentions {
+            background-color: #F5F5F5;
+            padding: 50px 0;
+        }
+        
+        .mention {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-family: Verdana, Geneva, sans-serif;
+            color: #001F3F
+        }
+        
+        blockquote {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        cite {
+            font-size: 18px;
+        }
+        
+        #quote1,
+        #quote2,
+        #quote3 {
+            font-size: 18px;
+        }
+        
         .container {
+            background-color: #001F3F;
+            color: #fff;
+            text-align: center;
+            padding-top: 40px;
+            border: 10px solid #FFD700;
+            height: 270px;
+            width: auto;
+            /* or whatever height you prefer */
+            /* This can help vertically center text if that's all you have in the header */
+            /* Or you could use padding */
+            padding: 10px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .pdf-container {
+                display: none;
+                /* Hide the embedded PDF container */
+            }
+            .pdf-download {
+                display: block;
+                /* Show the download link */
+                text-align: center;
+                margin-top: 20px;
+            }
+            #header {
+                padding-bottom: 20px;
+            }
+            h1 {
+                margin: 0;
+                padding-top: 10px;
+            }
+            #about- {
+                padding-top: 25px;
+                /* Adjust this to create more space between the profile image and "About Me" section */
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .container {
+                margin-top: -10px;
+                padding-bottom: 80px;
+            }
+            .overlap-image img {
+                width: 120px;
+            }
+            .container h1 {
+                font-size: 1.5em;
+            }
+            .containers {
+                border-radius: 40px;
+                /* reduce the border-radius for smaller screens */
+                padding: 15px;
+                margin: 8px;
+                height: auto;
+                /* Make the height determined by the content */
+                min-height: 200px;
+                /* Optional: set a minimum height if needed */
+            }
+        }
+        /* Mobile phones */
+        
+        @media (max-width: 480px) {
+            .pdf-container {
+                display: none;
+                /* Hide the embedded PDF container */
+            }
+            .pdf-download {
+                display: block;
+                /* Show the download link */
+                text-align: center;
+                margin-top: 20px;
+                color: blue;
+            }
+            #quote1,
+            #quote2,
+            #quote3 {
+                font-size: 14px;
+            }
+            #about- {
+                padding-top: 0px;
+                /* Adjust this to create more space between the profile image and "About Me" section */
+            }
+            #about-content {
+                padding: 20px;
+                /* Adjust this if needed */
+                max-width: 800px;
+                /* Set a maximum width for large screens */
+                margin: 0%;
+                /* Center the container on larger screens */
+                word-wrap: break-word;
+                /* This ensures long words don't overflow */
+                font-size: 3px;
+                /* Adjust if needed */
+            }
+            .overlap-image {
+                position: absolute;
+                top: 245px;
+                /* Set the desired top position */
+                left: 50%;
+                z-index: 2;
+                /* Center horizontally */
+                transform: translateX(-50%);
+                /* Adjust for horizontal centering */
+            }
+            #header {
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+            .container h1 {
+                font-size: 1.2em;
+            }
+            nav ul {
+                gap: 5px;
+            }
+            .container {
+                margin-top: 0px;
+            }
+            #about-content {
+                font-size: 14px;
+            }
+            .carousel-prev,
+            .carousel-next {
+                font-size: 12px;
+                font-weight: 1000;
+                border-width: 2cap;
+                padding: 8px 13px;
+                border-radius: 50%;
+            }
+        }
+        
+        .containers {
+            display: flex;
+            flex-direction: column;
+            /* Stacks child elements vertically */
+            justify-content: space-between;
+            /* Distributes space between the items */
+            padding: 20px;
+            margin: 12;
+            margin-left: 12;
+            margin-right: 12;
+            /* Set the desired width */
+            /* Set the desired height */
+            background-color: #D1A5A4;
+            /* Set the background color */
+            border-radius: 80px;
+            /* Set your desired border radius */
+            box-shadow: 0 15px 20px #001F3F;
+            border: 4px solid #FFD700;
+            /* 3px wide black border */
+            /* Create the shadow effect */
+        }
+        
+        .containers:hover {
+            background-color: #FF6B6B;
+        }
+        
+        .about {
+            margin-top: 120px;
+            padding: 60px 0;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        .containers1:hover {
+            background-color: #0056b3;
+        }
+        
+        #header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 60px 0;
+            position: fixed;
+            padding-top: 40px;
+        }
+        
+        header h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        
+        header img {
+            max-width: 200px;
+            border-radius: 50%;
             margin-top: 0px;
         }
-        #about-content {
-            font-size: 10px;
+        
+        .btn {
+            font-family: Verdana, Geneva, sans-serif;
+            display: inline-block;
+            background-color: #FFD700;
+            color: #001F3F;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
         }
-    }
-    
-    .container {
-        background-color: #001F3F;
-        color: #fff;
-        text-align: center;
-        border: 10px solid #FFD700;
-        height: 270px;
-        width: auto;
-        /* or whatever height you prefer */
-        /* This can help vertically center text if that's all you have in the header */
-        /* Or you could use padding */
-        padding: 10px 0;
-    }
-    
-    .containers {
-        display: flex;
-        flex-direction: column;
-        /* Stacks child elements vertically */
-        justify-content: space-between;
-        /* Distributes space between the items */
-        padding: 20px;
-        margin: 12;
-        margin-left: 12;
-        margin-right: 12;
-        /* Set the desired width */
-        /* Set the desired height */
-        background-color: #D1A5A4;
-        /* Set the background color */
-        border-radius: 80px;
-        /* Set your desired border radius */
-        box-shadow: 0 15px 20px #001F3F;
-        border: 4px solid #FFD700;
-        /* 3px wide black border */
-        /* Create the shadow effect */
-    }
-    
-    .containers:hover {
-        background-color: #FF6B6B;
-    }
-    
-    .about {
-        margin-top: 120px;
-        padding: 60px 0;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
-    .containers1:hover {
-        background-color: #0056b3;
-    }
-    
-    #header {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 60px 0;
-        position: fixed;
-    }
-    
-    header h1 {
-        font-size: 60px;
-        margin-bottom: 10px;
-    }
-    
-    header p {
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-    
-    header img {
-        max-width: 200px;
-        border-radius: 50%;
-        margin-top: 0px;
-    }
-    
-    .btn {
-        font-family: Verdana, Geneva, sans-serif;
-        display: inline-block;
-        background-color: #FFD700;
-        color: #001F3F;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-    
-    .btn:hover {
-        background-color: #FF6B6B;
-    }
-    
-    .carousel-container {
-        font-family: Verdana, Geneva, sans-serif;
-        justify-content: center;
-        align-items: center;
-        height: 70vh;
-        overflow: hidden;
-        margin-top: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 20px;
-        padding-top: 20px;
-        background-color: #D1A5A4;
-        box-shadow: 0 15px 20px #001F3F;
-        border-radius: 50px;
-        border: 4px solid #FFD700;
-    }
-    
-    .carousel-container:hover {
-        background-color: #FF6B6B;
-    }
-    
-    .carousel {
-        transition: transform 0.5s ease-in-out;
-        width: 100%;
-        height: 100%
-    }
-    
-    .project-card {
-        flex: 0 0 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-family: Verdana, Geneva, sans-serif;
-    }
-    
-    .iframe-container {
-        width: 80%;
-        /* Adjust iframe size as needed */
-        height: 60vh;
-        /* Adjust iframe height as needed */
-        border: none;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        /* Add a shadow effect to the iframe */
-        overflow: hidden;
-    }
-    
-    iframe {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .sectionH {
-        margin-bottom: 30px;
-    }
-    
-    .Skills {
-        margin-top: 20px;
-        margin-bottom: 40px;
-    }
-    
-    .portfolio {
-        margin-bottom: 20px;
-        margin-top: 50px;
-    }
-    
-    .killsss {
-        margin-top: 100px;
-    }
-    
-    .skills-section {
-        border: 4px solid #FFD700;
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 20px;
-        border-radius: 50px;
-        box-shadow: 0 4px 8px #001F3F;
-        background-color: #D1A5A4;
-    }
-    
-    .skills-section:hover {
-        background-color: #FF6B6B;
-    }
-    
-    .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 20px;
-        background-color: #D1A5A4;
-    }
-    
-    .skill-card {
-        border: 1px solid #D1A5A4;
-        border-radius: 5px;
-        padding: 15px;
-        box-shadow: 0 2px 4px #D1A5A4;
-        transition: box-shadow 0.3s ease;
-        background-color: #D1A5A4;
-    }
-    
-    .skill-card:hover {
-        box-shadow: 0 4px 8px #333;
-    }
-    
-    .skill-card h3 {
-        border-bottom: 2px solid;
-        border: 4px solid #FFD700;
-        padding-bottom: 10px;
-        margin-bottom: 15px;
-        color: #555;
-    }
-    
-    .skill-card ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    
-    .skill-card li {
-        margin-bottom: 10px;
-        color: #333;
-    }
-    
-    #h3 {
-        color: #001F3F;
-    }
-    
-    #interested {
-        font-style: white;
-        font-size: medium;
-        margin-bottom: 15px;
-    }
-    
-    .falling-flowers-container {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        /* Prevent interaction with flower elements */
-    }
-    
-    .falling-flower {
-        position: absolute;
-        width: 55px;
-        height: 55px;
-        background-color: red;
-        border-radius: 50%;
-        animation: fall 5s linear infinite;
-    }
-    
-    .falling-flower::before,
-    .falling-flower::after {
-        content: "";
-        position: absolute;
-        width: 55px;
-        height: 55px;
-        background-color: red;
-        border-radius: 50%;
-    }
-    
-    .falling-flower::before {
-        transform: translateX(-50%);
-    }
-    
-    .falling-flower::after {
-        transform: translateX(50%);
-    }
-    
-    @keyframes fall {
-        0% {
-            transform: translateY(-10%);
-            opacity: 1;
+        
+        .btn:hover {
+            background-color: #FF6B6B;
         }
-        100% {
-            transform: translateY(110%);
-            opacity: 0;
+        
+        .carousel-container {
+            font-family: Verdana, Geneva, sans-serif;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            overflow: hidden;
+            margin-top: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            background-color: #D1A5A4;
+            box-shadow: 0 15px 20px #001F3F;
+            border-radius: 50px;
+            border: 4px solid #FFD700;
         }
-    }
+        
+        .carousel-container:hover {
+            background-color: #FF6B6B;
+        }
+        
+        .carousel-prev:hover,
+        .carousel-next:hover {
+            background-color: #FF6B6B;
+            /* Change color on hover */
+        }
+        
+        .carousel {
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+            height: 100%
+        }
+        
+        .project-card {
+            flex: 0 0 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 6px;
+        }
+        
+        .sectionH {
+            margin-bottom: 30px;
+        }
+        
+        .Skills {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .portfolio {
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+        
+        .killsss {
+            margin-top: 100px;
+        }
+        
+        .carousel p {
+            font-size: 14px;
+            /* Adjust the font size as needed */
+        }
+        
+        .skills-section {
+            border: 4px solid #FFD700;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px #001F3F;
+            background-color: #D1A5A4;
+        }
+        
+        .skills-section:hover {
+            background-color: #FF6B6B;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            background-color: #D1A5A4;
+        }
+        
+        .skill-card {
+            border: 1px solid #D1A5A4;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 4px #D1A5A4;
+            transition: box-shadow 0.3s ease;
+            background-color: #D1A5A4;
+        }
+        
+        .skill-card:hover {
+            box-shadow: 0 4px 8px #333;
+        }
+        
+        .skill-card h3 {
+            border-bottom: 2px solid;
+            border: 4px solid #FFD700;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: #001F3F;
+        }
+        
+        .skill-card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .skill-card li {
+            margin-bottom: 10px;
+            color: #001F3F;
+        }
+        
+        #h3 {
+            color: #001F3F;
+        }
+        
+        #interested {
+            font-style: white;
+            font-size: medium;
+            margin-bottom: 15px;
+        }
+        
+        .social-media {
+            color: #001F3F;
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        .social-icons {
+            font-size: 60px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            color: #555;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        
+        .pdf-container {
+            display: block;
+            /* Show the embedded PDF container */
+            width: 100%;
+            /* Adjust the width as needed */
+            height: 400px;
+            /* Adjust the height as needed */
+            overflow: hidden;
+        }
+        
+        .embedded-pdf {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
