@@ -1,547 +1,641 @@
-        /* Reset default margins and padding */
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        .pdf-download {
-            display: none;
-            /* Hide the download link */
-        }
-        
-        .signature {
-            font-family: 'Great Vibes', cursive;
-        }
-        
-        body {
-            font-family: Georgia, Times, "Times New Roman", serif;
-            line-height: 1.6;
-            position: relative;
-            text-align: center;
-            background-color: #F5F5F5
-        }
-        
-        #myParagraph {
-            font-size: 15px;
-        }
-        
-        .overlap-image {
-            position: absolute;
-            top: 200px;
-            /* Set the desired top position */
-            left: 50%;
-            bottom: 0;
-            z-index: 2;
-            margin-bottom: -50x;
-            /* Center horizontally */
-            transform: translateX(-50%);
-            /* Adjust for horizontal centering */
-        }
-        
-        .carousel-prev,
-        .carousel-next {
-            font-size: 25px;
-            font-weight: 900;
-            color: #001F3F;
-            /* Text color */
-            background-color: #FFD700;
-            /* Background color */
-            border: #FF6B6B;
-            border-width: 1cap;
-            padding: 10px 15px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-        
-        .overlap-image img {
-            width: 250px;
-            height: auto;
-            border-radius: 50%;
-            border: 5px solid #FFD700;
-            box-shadow: 0 15px 20px #FF6B6B;
-            ;
-            z-index: 2;
-        }
-        
-        #footer {
-            margin-bottom: 20px;
-            margin-top: 20px;
-            background-color: #001F3F;
-            /* Space below */
-        }
-        /* Reset default margin and padding */
-        
-        h1 {
-            margin: 0;
-            padding-top: 20px;
-        }
-        
-        body,
-        h2 {
-            margin: 0;
-            padding: 0;
-        }
-        
-        p {
-            font-size: 2px;
-        }
-        
-        header {
-            position: relative;
-            /* Ensure header is a positioned ancestor */
-        }
-        
-        .container h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-        
-        .container p {
-            margin: 5px 0;
-        }
-        
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        
-        nav ul li {
-            list-style: none;
-        }
-        
-        nav ul li a {
-            font-family: Verdana, sans-serif;
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        
-        nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        /* For spacing the "About Me" section or any section below header */
-        
-        #about- {
-            padding-top: 80px;
-            /* Adjust this to create more space between the profile image and "About Me" section */
-        }
-        
-        #about-content {
-            font-family: Verdana, sans-serif;
-            overflow: hidden;
-            /* Hide overflowing content */
-            white-space: pre-line;
-            width: 100%;
-            margin-left: 10px;
-            margin-right: 10px;
-            /* or any desired width */
-            word-wrap: break-word;
-            /* Ensures that the words wrap onto the next line if they don't fit */
-            overflow-wrap: break-word;
-            /* Modern approach to word-wrapping */
-            font-size: 14px;
-            /* Adjust if needed */
-        }
-        /* Tablets */
-        
-        .public-mentions {
-            background-color: #F5F5F5;
-            padding: 50px 0;
-        }
-        
-        .mention {
-            margin-bottom: 30px;
-            padding: 20px;
-            border-radius: 5px;
-            font-size: 12px;
-            font-family: Verdana, sans-serif;
-            ;
-            color: #001F3F
-        }
-        
-        blockquote {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        
-        cite {
-            font-size: 18px;
-        }
-        
-        .mention p {
-            font-size: 18px;
-        }
-        
-        .container {
-            background-color: #001F3F;
-            color: #fff;
-            text-align: center;
-            padding-top: 40px;
-            border: 10px solid #FFD700;
-            height: 270px;
-            width: auto;
-            /* or whatever height you prefer */
-            /* This can help vertically center text if that's all you have in the header */
-            /* Or you could use padding */
-            padding: 10px 0;
-        }
-        
-        @media (max-width: 768px) {
-            .pdf-container {
-                display: none;
-                /* Hide the embedded PDF container */
-            }
-            .pdf-download {
-                display: block;
-                /* Show the download link */
-                text-align: center;
-                margin-top: 20px;
-            }
-            #header {
-                padding-bottom: 20px;
-            }
-            h1 {
+            /* Reset default margins and padding */
+            
+            * {
                 margin: 0;
-                padding-top: 10px;
+                padding: 0;
+                box-sizing: border-box;
             }
-            #about- {
-                padding-top: 25px;
-                /* Adjust this to create more space between the profile image and "About Me" section */
-            }
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-            }
-            .container {
-                margin-top: -10px;
-                padding-bottom: 80px;
-            }
-            .overlap-image img {
-                width: 120px;
-            }
-            .container h1 {
-                font-size: 1.5em;
-            }
-            .containers {
-                border-radius: 40px;
-                /* reduce the border-radius for smaller screens */
-                padding: 15px;
-                margin: 8px;
-                height: auto;
-                /* Make the height determined by the content */
-                min-height: 200px;
-                /* Optional: set a minimum height if needed */
-            }
-        }
-        /* Mobile phones */
-        
-        @media (max-width: 480px) {
-            .pdf-container {
-                display: none;
-                /* Hide the embedded PDF container */
-            }
+            
             .pdf-download {
-                display: block;
-                /* Show the download link */
+                display: none;
+                /* Hide the download link */
+            }
+            
+            .signature {
+                font-family: 'Great Vibes', cursive;
+            }
+            
+            body {
+                font-family: Georgia, Times, "Times New Roman", serif;
+                line-height: 1.6;
+                position: relative;
                 text-align: center;
-                margin-top: 20px;
-                color: blue;
+                background-color: #F5F5F5
             }
-            .mention p {
-                font-size: 14px;
+            
+            #myParagraph {
+                font-size: 15px;
             }
-            #about- {
-                padding-top: 0px;
-                /* Adjust this to create more space between the profile image and "About Me" section */
-            }
-            #about-content {
-                padding: 20px;
-                /* Adjust this if needed */
-                max-width: 800px;
-                /* Set a maximum width for large screens */
-                margin: 0%;
-                /* Center the container on larger screens */
-                word-wrap: break-word;
-                /* This ensures long words don't overflow */
-                font-size: 3px;
-                /* Adjust if needed */
-            }
+            
             .overlap-image {
                 position: absolute;
-                top: 245px;
+                top: 200px;
                 /* Set the desired top position */
                 left: 50%;
+                bottom: 0;
                 z-index: 2;
+                margin-bottom: -50x;
                 /* Center horizontally */
                 transform: translateX(-50%);
                 /* Adjust for horizontal centering */
             }
-            #header {
-                margin-bottom: 0px;
-                margin-top: 0px;
-            }
-            .container h1 {
-                font-size: 1.2em;
-            }
-            nav ul {
-                gap: 5px;
-            }
-            .container {
-                margin-top: 0px;
-            }
-            #about-content {
-                font-size: 14px;
-            }
+            
             .carousel-prev,
             .carousel-next {
-                font-size: 12px;
-                font-weight: 1000;
-                border-width: 2cap;
-                padding: 8px 13px;
+                font-size: 25px;
+                font-weight: 900;
+                color: #001F3F;
+                /* Text color */
+                background-color: #FFD700;
+                /* Background color */
+                border: #FF6B6B;
+                border-width: 1cap;
+                padding: 10px 15px;
                 border-radius: 50%;
+                cursor: pointer;
             }
-        }
-        
-        .containers {
-            display: flex;
-            flex-direction: column;
-            /* Stacks child elements vertically */
-            justify-content: space-between;
-            /* Distributes space between the items */
-            padding: 20px;
-            margin: 12;
-            margin-left: 12;
-            margin-right: 12;
-            /* Set the desired width */
-            /* Set the desired height */
-            background-color: #D1A5A4;
-            /* Set the background color */
-            border-radius: 80px;
-            /* Set your desired border radius */
-            box-shadow: 0 15px 20px #001F3F;
-            border: 4px solid #FFD700;
-            /* 3px wide black border */
-            /* Create the shadow effect */
-        }
-        
-        .containers:hover {
-            background-color: #FF6B6B;
-        }
-        
-        .about {
-            margin-top: 120px;
-            padding: 60px 0;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        
-        .containers1:hover {
-            background-color: #0056b3;
-        }
-        
-        #header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 60px 0;
-            position: fixed;
-            padding-top: 40px;
-        }
-        
-        header h1 {
-            font-size: 60px;
-            margin-bottom: 10px;
-        }
-        
-        header p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-        
-        header img {
-            max-width: 200px;
-            border-radius: 50%;
-            margin-top: 0px;
-        }
-        
-        .btn {
-            font-family: Verdana, Geneva, sans-serif;
-            display: inline-block;
-            background-color: #FFD700;
-            color: #001F3F;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        
-        .btn:hover {
-            background-color: #FF6B6B;
-        }
-        
-        .sectionH {
-            margin-bottom: 30px;
-        }
-        
-        .Skills {
-            margin-top: 20px;
-            margin-bottom: 40px;
-        }
-        
-        .portfolio {
-            margin-bottom: 20px;
-            margin-top: 50px;
-        }
-        
-        .killsss {
-            margin-top: 100px;
-        }
-        
-        .carousel p {
-            font-size: 14px;
-            /* Adjust the font size as needed */
-        }
-        
-        .skills-section {
-            border: 4px solid #FFD700;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            border-radius: 50px;
-            box-shadow: 0 15px 20px #001F3F;
-            background-color: #D1A5A4;
-        }
-        
-        .skills-section:hover {
-            background-color: #FF6B6B;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            background-color: #D1A5A4;
-        }
-        
-        .skill-card {
-            border: 1px solid #D1A5A4;
-            border-radius: 5px;
-            padding: 15px;
-            box-shadow: 0 2px 4px #D1A5A4;
-            transition: box-shadow 0.3s ease;
-            background-color: #D1A5A4;
-        }
-        
-        .skill-card:hover {
-            box-shadow: 0 4px 8px #333;
-        }
-        
-        .skill-card h3 {
-            border-bottom: 2px solid;
-            border: 4px solid #FFD700;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-            color: #001F3F;
-        }
-        
-        .skill-card ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        .skill-card li {
-            margin-bottom: 10px;
-            color: #001F3F;
-        }
-        
-        #h3 {
-            color: #001F3F;
-        }
-        
-        #interested {
-            font-style: white;
-            font-size: medium;
-            margin-bottom: 15px;
-        }
-        
-        .social-media {
-            color: #001F3F;
-            text-align: center;
-            padding: 50px 0;
-        }
-        
-        .social-icons {
-            font-size: 60px;
-            margin-top: 20px;
-        }
-        
-        .social-icons a {
-            color: #555;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        
-        .pdf-container {
-            display: block;
-            /* Show the embedded PDF container */
-            width: 100%;
-            /* Adjust the width as needed */
-            height: 400px;
-            /* Adjust the height as needed */
-            overflow: hidden;
-        }
-        
-        .embedded-pdf {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
-        .mention pre {
-            font-size: 14px;
-            /* Adjust the font size as needed */
-        }
-        
-        .carousel {
-            display: flex;
-            align-items: center;
-            max-width: 600px;
-            margin: 50px auto;
-            border: 1px solid #ccc;
-            padding: 20px;
-            position: relative;
-            background-color: #FF6B6B;
-            box-shadow: 0 15px 20px #001F3F;
-        }
-        
-        .carousel:hover {
-            background-color: #D1A5A4;
-        }
-        
-        .arrow {
-            background-color: #FFD700;
-            border: none;
-            cursor: pointer;
-            padding: 10px 15px;
-            font-size: 24px;
-        }
-        
-        .carousel-content {
-            flex: 1;
-            text-align: center;
-            padding: 0 20px;
-        }
-        
-        #repo-name {
-            margin: 0;
-        }
-        
-        #repo-description {
-            margin-top: 10px;
-        }
+            
+            .overlap-image img {
+                width: 250px;
+                height: auto;
+                border-radius: 50%;
+                border: 5px solid #FFD700;
+                box-shadow: 0 15px 20px #FF6B6B;
+                ;
+                z-index: 2;
+            }
+            
+            #footer {
+                margin-bottom: 20px;
+                margin-top: 20px;
+                background-color: #001F3F;
+                /* Space below */
+            }
+            /* Reset default margin and padding */
+            
+            h1 {
+                margin: 0;
+                padding-top: 20px;
+            }
+            
+            body,
+            h2 {
+                margin: 0;
+                padding: 0;
+            }
+            
+            p {
+                font-size: 2px;
+            }
+            
+            header {
+                position: relative;
+                /* Ensure header is a positioned ancestor */
+            }
+            
+            .container h1 {
+                margin: 0;
+                font-size: 2em;
+            }
+            
+            .container p {
+                margin: 5px 0;
+            }
+            
+            nav ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+            
+            nav ul li {
+                list-style: none;
+            }
+            
+            nav ul li a {
+                font-family: Verdana, sans-serif;
+                color: white;
+                text-decoration: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+            
+            nav ul li a:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+            /* For spacing the "About Me" section or any section below header */
+            
+            #about- {
+                padding-top: 80px;
+                /* Adjust this to create more space between the profile image and "About Me" section */
+            }
+            
+            #about-content {
+                font-family: Verdana, sans-serif;
+                overflow: hidden;
+                /* Hide overflowing content */
+                white-space: pre-line;
+                width: 100%;
+                margin-left: 10px;
+                margin-right: 10px;
+                /* or any desired width */
+                word-wrap: break-word;
+                /* Ensures that the words wrap onto the next line if they don't fit */
+                overflow-wrap: break-word;
+                /* Modern approach to word-wrapping */
+                font-size: 14px;
+                /* Adjust if needed */
+            }
+            /* Tablets */
+            
+            .public-mentions {
+                background-color: #F5F5F5;
+                padding: 50px 0;
+            }
+            
+            .mention {
+                margin-bottom: 30px;
+                padding: 20px;
+                border-radius: 5px;
+                font-size: 12px;
+                font-family: Verdana, sans-serif;
+                ;
+                color: #001F3F
+            }
+            
+            blockquote {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            
+            cite {
+                font-size: 18px;
+            }
+            
+            .mention p {
+                font-size: 18px;
+            }
+            
+            .container {
+                background-color: #001F3F;
+                color: #fff;
+                text-align: center;
+                padding-top: 40px;
+                border: 10px solid #FFD700;
+                height: 270px;
+                width: auto;
+                /* or whatever height you prefer */
+                /* This can help vertically center text if that's all you have in the header */
+                /* Or you could use padding */
+                padding: 10px 0;
+            }
+            
+            .containers {
+                display: flex;
+                flex-direction: column;
+                /* Stacks child elements vertically */
+                justify-content: space-between;
+                /* Distributes space between the items */
+                padding: 20px;
+                margin: 12;
+                margin-left: 12;
+                margin-right: 12;
+                /* Set the desired width */
+                /* Set the desired height */
+                background-color: #D1A5A4;
+                /* Set the background color */
+                border-radius: 80px;
+                /* Set your desired border radius */
+                box-shadow: 0 15px 20px #001F3F;
+                border: 4px solid #FFD700;
+                /* 3px wide black border */
+                /* Create the shadow effect */
+            }
+            
+            .containers:hover {
+                background-color: #FF6B6B;
+            }
+            
+            .about {
+                margin-top: 120px;
+                padding: 60px 0;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            
+            .containers1:hover {
+                background-color: #0056b3;
+            }
+            
+            #header {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 60px 0;
+                position: fixed;
+                padding-top: 40px;
+            }
+            
+            header h1 {
+                font-size: 60px;
+            }
+            
+            header p {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+            
+            header img {
+                max-width: 200px;
+                border-radius: 50%;
+                margin-top: 0px;
+            }
+            
+            .btn {
+                font-family: Verdana, Geneva, sans-serif;
+                display: inline-block;
+                background-color: #FFD700;
+                color: #001F3F;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+            
+            .btn:hover {
+                background-color: #FF6B6B;
+            }
+            
+            .sectionH {
+                margin-bottom: 30px;
+            }
+            
+            .Skills {
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+            
+            .portfolio {
+                margin-bottom: 20px;
+                margin-top: 50px;
+            }
+            
+            .killsss {
+                margin-top: 100px;
+            }
+            
+            .carousel p {
+                font-size: 14px;
+                /* Adjust the font size as needed */
+            }
+            
+            .skills-section {
+                border: 4px solid #FFD700;
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+                border-radius: 50px;
+                box-shadow: 0 15px 20px #001F3F;
+                background-color: #D1A5A4;
+            }
+            
+            .skills-section:hover {
+                background-color: #FF6B6B;
+            }
+            
+            .skills-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 20px;
+                background-color: #D1A5A4;
+            }
+            
+            .skill-card {
+                border: 1px solid #D1A5A4;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 4px #D1A5A4;
+                transition: box-shadow 0.3s ease;
+                background-color: #D1A5A4;
+            }
+            
+            .skill-card:hover {
+                box-shadow: 0 4px 8px #333;
+            }
+            
+            .skill-card h3 {
+                border-bottom: 2px solid;
+                border: 4px solid #FFD700;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+                color: #001F3F;
+            }
+            
+            .skill-card ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            
+            .skill-card li {
+                margin-bottom: 10px;
+                color: #001F3F;
+            }
+            
+            #h3 {
+                color: #001F3F;
+            }
+            
+            #interested {
+                font-style: white;
+                font-size: medium;
+                margin-bottom: 15px;
+            }
+            
+            .social-media {
+                color: #001F3F;
+                text-align: center;
+                padding: 50px 0;
+            }
+            
+            .social-icons {
+                font-size: 60px;
+                margin-top: 20px;
+            }
+            
+            .social-icons a {
+                color: #555;
+                margin: 0 15px;
+                text-decoration: none;
+            }
+            
+            .pdf-container {
+                display: block;
+                /* Show the embedded PDF container */
+                width: 100%;
+                /* Adjust the width as needed */
+                height: 400px;
+                /* Adjust the height as needed */
+                overflow: hidden;
+            }
+            
+            .embedded-pdf {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+            
+            .mention pre {
+                font-size: 14px;
+                /* Adjust the font size as needed */
+            }
+            
+            .carousel {
+                display: flex;
+                align-items: center;
+                max-width: 600px;
+                margin: 50px auto;
+                border: 1px solid #ccc;
+                padding: 20px;
+                position: relative;
+                background-color: #D1A5A4;
+                box-shadow: 0 15px 20px #001F3F;
+            }
+            
+            .carousel:hover {
+                background-color: #FF6B6B;
+            }
+            
+            .arrow {
+                background-color: #FFD700;
+                border: none;
+                cursor: pointer;
+                padding: 10px 15px;
+                font-size: 24px;
+            }
+            
+            .carousel-content {
+                flex: 1;
+                text-align: center;
+                padding: 0 20px;
+            }
+            
+            #repo-name {
+                margin: 0;
+            }
+            
+            .about-me {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 60vh;
+                /* adjust based on your preference */
+                padding: 2em;
+                background-color: #D1A5A4;
+                margin-bottom: 20px;
+                border-color: #FFD700;
+                border-width: 2px;
+                box-shadow: #001F3F;
+                padding-top: 110px;
+            }
+            
+            .image-container img {
+                max-width: 300px;
+                /* creates a circular portrait */
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+                /* optional shadow for depth */
+                margin-right: 2em;
+                border-width: 2px;
+                box-shadow: 0 15px 20px #001F3F;
+                border: 4px solid #FFD700;
+            }
+            
+            .text-container {
+                max-width: 500px;
+            }
+            
+            .text-container h1 {
+                font-size: 2.5em;
+                color: #333;
+                margin-bottom: 0.5em;
+            }
+            
+            .text-container p {
+                font-size: 1.2em;
+                line-height: 1.6;
+                color: #555;
+                margin-bottom: 1.5em;
+            }
+            
+            @media (max-width: 768px) {
+                .mention blockquote {
+                    font-size: 10px;
+                }
+                .mention p {
+                    font-size: 10px;
+                }
+                .about-me {
+                    justify-content: center;
+                    height: 80vh;
+                    font: 10px;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 1em;
+                    /* Center items horizontally */
+                    /* adjust based on your preference */
+                }
+                #about-me h1 {
+                    font-size: 8px;
+                    /* or whatever size you deem appropriate */
+                }
+                #about-me p {
+                    font-size: 8px;
+                    /* or whatever size you deem appropriate */
+                }
+                .image-container img {
+                    max-width: 0px;
+                    border-width: 0px;
+                    box-shadow: 0 0px 0px #001F3F;
+                    border: 0px solid #D1A5A4;
+                }
+                .carousel:hover {
+                    background-color: #D1A5A4;
+                }
+                .text-container {
+                    max-width: 500px;
+                }
+                .text-container h1 {
+                    font-size: 2.5em;
+                    color: #333;
+                    margin-bottom: 0.5em;
+                }
+                .text-container p {
+                    font-size: 1.2em;
+                    line-height: 1.6;
+                    color: #555;
+                    margin-bottom: 1.5em;
+                }
+                .pdf-container {
+                    display: none;
+                    /* Hide the embedded PDF container */
+                }
+                .pdf-download {
+                    display: block;
+                    /* Show the download link */
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                #header {
+                    padding-bottom: 20px;
+                }
+                h1 {
+                    margin: 0;
+                    padding-top: 10px;
+                }
+                nav ul {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                .container {
+                    margin-top: -10px;
+                    padding-bottom: 80px;
+                }
+                .overlap-image img {
+                    width: 120px;
+                }
+                .container h1 {
+                    font-size: 1.5em;
+                }
+                .containers {
+                    border-radius: 40px;
+                    /* reduce the border-radius for smaller screens */
+                    padding: 15px;
+                    margin: 8px;
+                    height: auto;
+                    /* Make the height determined by the content */
+                    min-height: 200px;
+                    /* Optional: set a minimum height if needed */
+                }
+            }
+            /* Mobile phones */
+            
+            @media (max-width: 480px) {
+                .about-me h1 {
+                    font-size: 20px;
+                    /* or whatever size you deem appropriate */
+                }
+                .about-me p {
+                    font-size: 14px;
+                    /* or whatever size you deem appropriate */
+                }
+                .carousel:hover {
+                    background-color: #D1A5A4;
+                }
+                .pdf-container {
+                    display: none;
+                    /* Hide the embedded PDF container */
+                }
+                .pdf-download {
+                    display: block;
+                    /* Show the download link */
+                    text-align: center;
+                    margin-top: 20px;
+                    color: blue;
+                }
+                .mention p {
+                    font-size: 14px;
+                }
+                .overlap-image {
+                    position: absolute;
+                    top: 245px;
+                    /* Set the desired top position */
+                    left: 50%;
+                    z-index: 2;
+                    /* Center horizontally */
+                    transform: translateX(-50%);
+                    /* Adjust for horizontal centering */
+                }
+                #header {
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                }
+                .container h1 {
+                    font-size: 1.2em;
+                }
+                nav ul {
+                    gap: 5px;
+                }
+                .container {
+                    margin-top: 0px;
+                }
+                .carousel-prev,
+                .carousel-next {
+                    font-size: 12px;
+                    font-weight: 1000;
+                    border-width: 2cap;
+                    padding: 8px 13px;
+                    border-radius: 50%;
+                }
+                .image-container {
+                    width: 60%;
+                    /* or whatever size you deem appropriate */
+                    height: auto;
+                }
+                .image-container img {
+                    width: 100%;
+                    height: auto;
+                }
+                .carousel-content {
+                    font-size: 15px;
+                }
+                #repo-description {
+                    font-size: 10px;
+                }
+                .skill-card {
+                    font-size: 12px;
+                }
+                .public-mentions p {
+                    font-size: 15px;
+                }
+            }

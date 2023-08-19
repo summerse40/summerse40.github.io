@@ -88,3 +88,27 @@ window.addEventListener('scroll', function() {
 
     lastScrollTop = scrollTop;
 });
+document.addEventListener("DOMContentLoaded", function() {
+    openTab('Bio');
+});
+
+
+function closeAllTabs() {
+    let i;
+    const content = document.getElementsByClassName("tabcontent");
+
+    for (i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
+    }
+}
+
+function openTab(tabName) {
+    const content = document.getElementById(tabName);
+
+    if (content.style.display === "block") {
+        content.style.display = "none"; // If already open, close it
+    } else {
+        closeAllTabs(); // Close all other sections
+        content.style.display = "block"; // Open the clicked section
+    }
+}
