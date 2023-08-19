@@ -468,8 +468,26 @@
                 margin-bottom: 1.5em;
             }
             
+            .sparkling-div {
+                width: 100px;
+                height: 100px;
+                background: linear-gradient(-45deg, #f06, #fc0, #f06, #fc0);
+                background-size: 400% 400%;
+                animation: sparkle 1.5s infinite linear;
+            }
+            
+            @keyframes sparkle {
+                0% {
+                    background-position: 0% 50%;
+                }
+                100% {
+                    background-position: 100% 50%;
+                }
+            }
+            
             @media (max-width: 768px) {
-                .mention blockquote {
+                .mention blockquote,
+                p {
                     font-size: 10px;
                 }
                 .mention p {
