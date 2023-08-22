@@ -113,3 +113,10 @@ function openTab(tabName) {
         content.style.display = "block"; // Open the clicked section
     }
 }
+
+const navToggle = document.querySelector('.nav-toggle');
+const navContainer = document.querySelector('.nav-container');
+
+navToggle.addEventListener('click', () => {
+    navContainer.classList.toggle('open');
+});
