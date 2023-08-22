@@ -22,7 +22,8 @@ function fetchRepos() {
     fetch(`https://api.github.com/users/${username}/repos`)
         .then(response => response.json())
         .then(data => {
-            repos = data;
+            // Filter out the unwanted repository by its name
+            repos = data.filter(repo => repo.name !== 'summerse40.github.io');
             displayRepo();
         });
 }
