@@ -103,20 +103,37 @@ function closeAllTabs() {
     }
 }
 
-function openTab(tabName) {
-    const content = document.getElementById(tabName);
 
-    if (content.style.display === "block") {
-        content.style.display = "none"; // If already open, close it
-    } else {
-        closeAllTabs(); // Close all other sections
-        content.style.display = "block"; // Open the clicked section
+
+function myFunction() {
+    var dropdown = document.getElementById("myDropdown");
+    dropdown.classList.toggle("show");
+
+    // Update button text based on dropdown visibility
+    var buttonText = dropdown.classList.contains("show") ? "Collapse" : "Read More";
+    document.querySelector(".dropbtn").textContent = buttonText;
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+                document.querySelector(".dropbtn").textContent = "Read More";
+            }
+        }
     }
 }
 
-const navToggle = document.querySelector('.nav-toggle');
-const navContainer = document.querySelector('.nav-container');
 
-navToggle.addEventListener('click', () => {
-    navContainer.classList.toggle('open');
-});
+function myFunction1() {
+    var x = document.getElementById("Demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
