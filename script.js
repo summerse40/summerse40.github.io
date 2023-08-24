@@ -137,9 +137,13 @@ function myFunction1() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-const mobileMenuButton = document.getElementById("mobile-menu");
-const navList = document.querySelector(".nav-list");
 
-mobileMenuButton.addEventListener("click", () => {
-    navList.classList.toggle("active");
-});
+
+function burgerf() {
+    const mobileMenuButton = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+
+    mobileMenuButton.addEventListener('click', function() {
+        navList.classList.toggle('active');
+    });
+}
