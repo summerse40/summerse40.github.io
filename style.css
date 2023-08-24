@@ -463,7 +463,6 @@
         
         .nav .nav-list li {
             margin: 0 15px;
-            z-index: 1000;
             /* Stack it high above other elements */
         }
         
@@ -471,7 +470,6 @@
             text-decoration: none;
             color: white;
             transition: color 0.4s ease-in-out;
-            z-index: 1000;
             /* Stack it high above other elements */
         }
         
