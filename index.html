@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <title>Emily Summers</title>
 </head>
 
@@ -15,31 +17,28 @@
         <div class="container">
             <h1>Emily Summers</h1>
             <p id="myParagraph">Transforming Data into Insights</p>
-            <nav>
-                <div class="nav-container">
-                    <ul class="nav-list">
-                        <li><a href="#about-" class="nav-link">About Me</a></li>
-                        <li><a href="#sectionC" class="nav-link">Portfolio</a></li>
-                        <li><a href="#skeel" class="nav-link">Skills</a></li>
-                        <li><a href="#publicity" class="nav-link">Publicity</a></li>
-                        <li><a href="#CV" class="nav-link">CV</a></li>
-                    </ul>
-                    <button class="nav-toggle" type="button" aria-label="Toggle Navigation Menu">
-                        <span class="hamburger-icon"></span>
-                    </button>
-
+            <nav class="nav">
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"> </span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </nav>
         </div>
         <div class="overlap-image">
             <img src="profile.JPG" alt="Overlap Photo">
         </div>
+
     </header>
-
-
     <section class="about-me">
         <pre id="about-"></pre>
-
         <div class="image-container">
             <img src="sanfran.jpg" alt="Your Portrait">
         </div>
@@ -48,10 +47,25 @@
             <p>Web developer, Data Analyst, artist, and avid hiker. With over 3 years in the tech industry and a recent graduate from my master in science, I combine my love for design and coding to create user-friendly experiences and to formulate insights
                 based on data.</p>
         </div>
+
+
+    </section>
+
+    <section class="about-me1">
+        <div class="dropdown">
+
+            <div id="myDropdown" class="dropdown-content">
+                <p> I recently graduated with my master in science of Computer Science in May 2023, and I am eager to join the workforce after recently completing a temporary job within my field domain. Previous experiences include big data analytics and
+                    machine learning research throughout my graduate degree and experience freelancing in website development for small business owners. I come from a bit of an odd background to be in computer science since my bachelor of science is in
+                    biomedical sciences. I hope to achieve a job working within computer science that may leverage my experiences within the laboratory. </p>
+            </div>
+            <button onclick="myFunction()" class="dropbtn" type="button"> Read More About Me
+            </button>
+        </div>
     </section>
     <pre id="sectionC"></pre>
 
-    <h2>Portfolio</h2>
+    <h2 id="port">Portfolio</h2>
 
 
     <div class="carousel">
