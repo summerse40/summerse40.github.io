@@ -693,7 +693,7 @@
                     width: 60%;
                     height: auto;
                     justify-content: center;
-                    margin-left: 50px;
+                    margin-left: 55px;
                 }
                 .image-container img {
                     width: 100%;
@@ -713,7 +713,7 @@
                     font-size: 15px;
                 }
                 .skill-card h3 {
-                    font-size: 16px;
+                    font-size: 15px;
                     /* Reduce size as needed */
                     margin: 0;
                     padding: 8px;
