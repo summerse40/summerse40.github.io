@@ -1,19 +1,3 @@
-window.onload = function() {
-    fetch('about.txt')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById('about-content').innerText = data;
-        })
-        .catch(error => {
-            console.log('There was a problem with the fetch operation:', error.message);
-        });
-}
-
 let currentRepoIndex = 0;
 let repos = [];
 
@@ -33,6 +17,9 @@ function displayRepo() {
     if (repo) {
         document.getElementById('repo-name').textContent = repo.name;
         document.getElementById('repo-description').textContent = repo.description || "No description provided.";
+        const repoLink = document.getElementById('repo-link');
+        repoLink.href = repo.html_url;
+        repoLink.setAttribute("target", "_blank"); // Dynamically setting target attribute
     }
 }
 
