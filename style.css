@@ -101,34 +101,13 @@
             
             .container h1 {
                 margin: 0;
-                font-size: 30px;
+                font-size: 40px;
+                font-weight: 500;
                 font-family: Verdana, sans-serif;
             }
             
             .container p {
                 margin: 5px 0;
-            }
-            
-            #about- {
-                padding-top: 80px;
-                /* Adjust this to create more space between the profile image and "About Me" section */
-            }
-            
-            #about-content {
-                font-family: Verdana, sans-serif;
-                overflow: hidden;
-                /* Hide overflowing content */
-                white-space: pre-line;
-                width: 100%;
-                margin-left: 10px;
-                margin-right: 10px;
-                /* or any desired width */
-                word-wrap: break-word;
-                /* Ensures that the words wrap onto the next line if they don't fit */
-                overflow-wrap: break-word;
-                /* Modern approach to word-wrapping */
-                font-size: 14px;
-                /* Adjust if needed */
             }
             /* Tablets */
             
@@ -274,7 +253,7 @@
                 padding: 20px;
                 border-radius: 50px;
                 box-shadow: 0 15px 20px #001F3F;
-                background-color: #D1A5A4;
+                background-color: #A41648;
             }
             
             .skills-section:hover {
@@ -285,7 +264,7 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
                 gap: 20px;
-                background-color: #D1A5A4;
+                background-color: #A41648;
             }
             
             .skill-card {
@@ -294,7 +273,7 @@
                 padding: 15px;
                 box-shadow: 0 2px 4px #D1A5A4;
                 transition: box-shadow 0.3s ease;
-                background-color: #D1A5A4;
+                background-color: #A41648;
             }
             
             .skill-card:hover {
@@ -306,7 +285,7 @@
                 border: 4px solid #FFD700;
                 padding-bottom: 10px;
                 margin-bottom: 15px;
-                color: #001F3F;
+                color: white;
                 font-size: 21px;
                 overflow-wrap: break-word;
                 word-wrap: break-word;
@@ -321,13 +300,14 @@
             
             .skill-card li {
                 margin-bottom: 10px;
-                color: #001F3F;
+                color: white;
             }
             
             #h3 {
-                color: #001F3F;
+                color: white;
                 font-size: 9px;
             }
+            /* Bottom of Page Content*/
             
             #interested {
                 font-style: white;
@@ -371,6 +351,7 @@
             .mention pre {
                 font-size: 14px;
             }
+            /*Portfolio Content */
             
             .carousel {
                 display: flex;
@@ -381,7 +362,7 @@
                 border-width: 4px;
                 padding: 20px;
                 position: relative;
-                background-color: #D1A5A4;
+                background-color: #A41648;
                 box-shadow: 0 15px 20px #001F3F;
                 border-radius: 3%;
             }
@@ -401,7 +382,7 @@
             .carousel-content {
                 font-size: 18px;
                 line-height: 1.6;
-                color: #555;
+                color: white;
                 margin-bottom: 1.5em;
                 padding-left: 10px;
                 padding-right: 10px;
@@ -409,19 +390,79 @@
             
             #repo-name {
                 margin: 0;
+                color: #FFD700;
+                font-weight: 600;
             }
+            /*about Me */
             
             .about-me {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 height: auto;
-                background-color: #D1A5A4;
+                background-color: #A41648;
                 border-color: #FFD700;
                 border-width: 2px;
                 box-shadow: #001F3F;
                 padding-top: 200px;
                 padding-bottom: 70px;
+            }
+            
+            #about- {
+                padding-top: 80px;
+            }
+            
+            #about-content {
+                font-family: Verdana, sans-serif;
+                overflow: hidden;
+                white-space: pre-line;
+                width: 100%;
+                margin-left: 10px;
+                margin-right: 10px;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                font-size: 14px;
+            }
+            
+            .text-container {
+                max-width: 900px;
+                padding-bottom: 0px;
+            }
+            
+            .text-container h1 {
+                font-size: 3em;
+                font-weight: 650;
+                color: #FFD700;
+                margin-bottom: 0.5em;
+            }
+            
+            .text-container p {
+                font-size: 1.2em;
+                line-height: 1.6;
+                color: white;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+            
+            .about-me1 {
+                display: center;
+                align-items: center;
+                justify-content: center;
+                height: auto;
+                /* adjust based on your preference */
+                background-color: #A41648;
+                border-color: #FFD700;
+                border-width: 2px;
+                box-shadow: #001F3F;
+                padding-left: 400px;
+                padding-right: 400px;
+            }
+            
+            .dropdown-content p {
+                font-size: 18px;
+                line-height: 1.6;
+                color: white;
+                margin-bottom: 1.5em;
             }
             
             .image-container img {
@@ -432,25 +473,6 @@
                 box-shadow: 0 15px 20px #001F3F;
                 border: 4px solid #FFD700;
                 border-radius: 30px;
-            }
-            
-            .text-container {
-                max-width: 900px;
-                padding-bottom: 0px;
-            }
-            
-            .text-container h1 {
-                font-size: 2.5em;
-                color: #333;
-                margin-bottom: 0.5em;
-            }
-            
-            .text-container p {
-                font-size: 1.2em;
-                line-height: 1.6;
-                color: #555;
-                margin-bottom: 0px;
-                padding-bottom: 0px;
             }
             
             .nav .nav-list {
@@ -519,7 +541,7 @@
             }
             
             .dropdown-content a {
-                color: black;
+                color: white;
                 padding: 12px 16px;
                 display: block;
                 font-size: 50px;
@@ -532,27 +554,6 @@
             
             .show {
                 display: block;
-            }
-            
-            .about-me1 {
-                display: center;
-                align-items: center;
-                justify-content: center;
-                height: auto;
-                /* adjust based on your preference */
-                background-color: #D1A5A4;
-                border-color: #FFD700;
-                border-width: 2px;
-                box-shadow: #001F3F;
-                padding-left: 400px;
-                padding-right: 400px;
-            }
-            
-            .dropdown-content p {
-                font-size: 18px;
-                line-height: 1.6;
-                color: #555;
-                margin-bottom: 1.5em;
             }
             
             @media (max-width: 768px) {
@@ -571,13 +572,13 @@
                 }
                 .text-container h1 {
                     font-size: 2.5em;
-                    color: #333;
+                    color: #FFD700;
                     margin-bottom: 0.5em;
                 }
                 .text-container p {
                     font-size: 1.2em;
                     line-height: 1.6;
-                    color: #555;
+                    color: white;
                 }
                 .pdf-container {
                     display: none;
