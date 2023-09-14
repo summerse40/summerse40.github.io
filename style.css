@@ -628,7 +628,58 @@
                                 margin: 0 auto;
                             }
                         }
+                        /* Tablet styles//////////////// Missing alignment of the button */
+                        
+                        @media screen and (min-width: 718px) {
+                            .menu-toggle {
+                                display: none;
+                                margin: 0 auto;
+                            }
+                            .dropbtn {
+                                font-size: 16px;
+                                padding: 12px;
+                                border-radius: 0px;
+                                margin: 0 auto;
+                            }
+                            .about-me1 {
+                                text-align: center;
+                                /* Center-align the contents of .about-me1 */
+                                /* Add other styles for .about-me1 if needed */
+                            }
+                        }
+                        /* Small desktop styles */
+                        
+                        @media screen and (min-width: 1024px) {
+                            body {
+                                font-size: 20px;
+                                /* Adjust styles for small desktop screens if needed */
+                            }
+                        }
                         /* Mobile phones */
+                        /* Medium desktop styles */
+                        
+                        @media screen and (min-width: 1280px) {
+                            body {
+                                font-size: 22px;
+                                /* Adjust styles for medium desktop screens if needed */
+                            }
+                        }
+                        /* Large desktop styles */
+                        
+                        @media screen and (min-width: 1440px) {
+                            body {
+                                font-size: 24px;
+                                /* Adjust styles for large desktop screens if needed */
+                            }
+                        }
+                        /* Extra large display styles (4K) */
+                        
+                        @media screen and (min-width: 3840px) {
+                            body {
+                                font-size: 26px;
+                                /* Adjust styles for 4K screens if needed */
+                            }
+                        }
                         
                         @media (max-width: 480px) {
                             #myParagraph {
@@ -799,5 +850,13 @@
                             }
                             #h1 {
                                 font-size: 20px;
+                            }
+                        }
+                        /* Ultra large display styles (8K) */
+                        
+                        @media screen and (min-width: 7680px) {
+                            body {
+                                font-size: 28px;
+                                /* Adjust styles for 8K screens if needed */
                             }
                         }
