@@ -6,6 +6,15 @@
                 box-sizing: border-box;
             }
             
+            @font-face {
+                font-family: 'Handlee';
+                src: url(Handlee-Regular.ttf) format('truetype');
+            }
+            
+            body {
+                font-family: 'Handlee', sans-serif;
+            }
+            
             .pdf-download {
                 display: none;
                 /* Hide the download link */
