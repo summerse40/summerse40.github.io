@@ -9,10 +9,14 @@
             @font-face {
                 font-family: 'Handlee';
                 src: url(Handlee-Regular.ttf) format('truetype');
+                font-family: 'Aboreto';
+                src: url('Aboreto-Regular.ttf') format('truetype');
+                font-family: 'IM Fell French Canon';
+                src: url('IMFELLFrenchCanonRegular.ttf') format('truetype');
             }
             
             body {
-                font-family: 'Handlee', sans-serif;
+                font-family: 'Handlee', cursive;
             }
             
             .pdf-download {
@@ -21,7 +25,7 @@
             }
             
             body {
-                font-family: 'Garamond', serif;
+                font-family: 'Aboreto', sans-serif;
                 line-height: 1.6;
                 position: relative;
                 text-align: center;
@@ -36,7 +40,7 @@
             
             .overlap-image {
                 position: absolute;
-                top: 200px;
+                top: 230px;
                 left: 50%;
                 bottom: 0;
                 z-index: 2;
@@ -64,7 +68,13 @@
                 margin: 0;
                 padding-top: 20px;
                 font-size: 30px;
-                font-family: Verdana, sans-serif;
+                font-family: 'Aboreto', sans-serif;
+            }
+            
+            #name {
+                font-family: 'Alex Brush', cursive;
+                font-size: 65px;
+                font-weight: 100;
             }
             
             body,
@@ -87,15 +97,14 @@
             
             header {
                 position: relative;
-                font-family: Verdana, sans-serif;
-                /* Ensure header is a positioned ancestor */
+                font-family: 'Aboreto', sans-serif;
             }
             
             .container h1 {
                 margin: 0;
                 font-size: 40px;
                 font-weight: 750;
-                font-family: Verdana, sans-serif;
+                font-family: 'Aboreto', sans-serif;
             }
             
             .container p {
@@ -174,7 +183,7 @@
             }
             
             .btn {
-                font-family: Verdana, Geneva, sans-serif;
+                font-family: 'Aboreto', sans-serif;
                 display: inline-block;
                 background-color: white;
                 color: #001F3F;
@@ -275,7 +284,7 @@
                 padding: 20px;
                 border-radius: 5px;
                 font-size: 12px;
-                font-family: Verdana, sans-serif;
+                font-family: 'Aboreto', sans-serif;
                 color: #001F3F;
             }
             
@@ -364,7 +373,7 @@
             
             .carousel p {
                 font-size: 16px;
-                font-family: Verdana, sans-serif;
+                font-family: 'Aboreto', sans-serif;
             }
             
             .carousel {
@@ -427,7 +436,7 @@
             }
             
             #about-content {
-                font-family: Verdana, sans-serif;
+                font-family: 'Aboreto', sans-serif;
                 overflow: hidden;
                 white-space: pre-line;
                 width: 100%;
@@ -588,6 +597,7 @@
                 justify-content: center;
                 padding-bottom: 0px;
                 margin-right: 60px;
+                font-family: 'Aboreto', sans-serif;
             }
             
             .image-container {
