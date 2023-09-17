@@ -9,10 +9,10 @@
             @font-face {
                 font-family: 'Handlee';
                 src: url(Handlee-Regular.ttf) format('truetype');
-                font-family: 'Aboreto';
-                src: url('Aboreto-Regular.ttf') format('truetype');
                 font-family: 'IM Fell French Canon';
                 src: url('IMFELLFrenchCanonRegular.ttf') format('truetype');
+                font-family: 'Aboreto';
+                src: url('Aboreto-Regular.ttf') format('truetype');
             }
             
             body {
@@ -67,8 +67,12 @@
             h1 {
                 margin: 0;
                 padding-top: 20px;
-                font-size: 30px;
-                font-family: 'IM Fell French Canon', serif;
+                font-size: 25px;
+                font-family: 'Aboreto', sans-serif;
+            }
+            
+            h1.hello {
+                font-family: 'Handlee', cursive;
             }
             
             #name {
@@ -102,14 +106,14 @@
             
             .container h1 {
                 margin: 0;
-                font-size: 40px;
-                font-weight: 750;
+                font-size: 35px;
+                font-weight: 200;
                 font-family: 'Aboreto', sans-serif;
             }
             
             .container p {
                 margin: 5px 0;
-                font-size: 15px;
+                font-size: 17px;
             }
             
             .container {
@@ -149,6 +153,7 @@
                 border-radius: 80px;
                 box-shadow: 0 15px 20px #001F3F;
                 border: 4px solid white;
+                font-family: 'IM Fell French Canon', serif;
             }
             /*about me section */
             
@@ -161,6 +166,7 @@
                 padding: 60px 0;
                 margin-left: 10px;
                 margin-right: 10px;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .containers1:hover {
@@ -189,7 +195,6 @@
                 color: #001F3F;
                 padding: 10px 20px;
                 text-decoration: none;
-                border-radius: 5px;
             }
             
             .btn:hover {
@@ -218,10 +223,12 @@
                 border-radius: 50px;
                 box-shadow: 0 15px 20px #001F3F;
                 background-color: #A41648;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .skills-section:hover {
                 background-color: #001F3F;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .skills-grid {
@@ -229,6 +236,7 @@
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
                 gap: 20px;
                 background-color: #A41648;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .skill-card {
@@ -238,6 +246,7 @@
                 box-shadow: 0 2px 4px #D1A5A4;
                 transition: box-shadow 0.3s ease;
                 background-color: #A41648;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .skill-card:hover {
@@ -255,20 +264,24 @@
                 word-wrap: break-word;
                 white-space: normal;
                 overflow: hidden;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .skill-card ul {
                 list-style-type: none;
                 padding: 0;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .skill-card li {
                 margin-bottom: 10px;
                 color: white;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             #h3 {
                 color: white;
+                font-family: 'IM Fell French Canon', serif;
                 font-size: 9px;
             }
             /* Bottom of Page Content*/
@@ -277,6 +290,7 @@
             .public-mentions {
                 background-color: wheat;
                 padding: 50px 0;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .mention {
@@ -284,13 +298,14 @@
                 padding: 20px;
                 border-radius: 5px;
                 font-size: 12px;
-                font-family: 'Aboreto', sans-serif;
+                font-family: 'IM Fell French Canon', serif;
                 color: #001F3F;
             }
             
             blockquote {
                 font-size: 18px;
                 margin-bottom: 10px;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             cite {
@@ -308,7 +323,7 @@
             }
             
             .social-media {
-                color: #001F3F;
+                color: #333;
                 text-align: center;
                 padding: 50px 0;
             }
@@ -316,10 +331,11 @@
             .social-icons {
                 font-size: 60px;
                 margin-top: 20px;
+                color: #333
             }
             
             .social-icons a {
-                color: #555;
+                color: #333;
                 margin: 0 15px;
                 text-decoration: none;
             }
@@ -373,7 +389,7 @@
             
             .carousel p {
                 font-size: 16px;
-                font-family: 'Aboreto', sans-serif;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .carousel {
@@ -388,6 +404,7 @@
                 background-color: #A41648;
                 box-shadow: 0 15px 20px #001F3F;
                 border-radius: 3%;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .carousel:hover {
@@ -429,10 +446,12 @@
                 box-shadow: #001F3F;
                 padding-top: 200px;
                 padding-bottom: 70px;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             #about- {
                 padding-top: 80px;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             #about-content {
@@ -444,7 +463,8 @@
                 margin-right: 10px;
                 word-wrap: break-word;
                 overflow-wrap: break-word;
-                font-size: 14px;
+                font-size: 30px;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .text-container {
@@ -462,11 +482,12 @@
             }
             
             .text-container p {
-                font-size: 1.2em;
+                font-size: 1.5em;
                 line-height: 1.6;
                 color: white;
                 margin-bottom: 0px;
                 padding-bottom: 0px;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .about-me1 {
@@ -479,13 +500,15 @@
                 border-color: white;
                 border-width: 2px;
                 box-shadow: #001F3F;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .dropdown-content p {
-                font-size: 18px;
+                font-size: 23px;
                 line-height: 1.6;
                 color: white;
                 margin-bottom: 1.5em;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .image-container img {
@@ -543,7 +566,6 @@
                 border: none;
                 cursor: pointer;
                 font-weight: 700;
-                border-radius: 65%;
             }
             
             .dropdown-content {
@@ -551,7 +573,7 @@
                 position: center;
                 overflow: auto;
                 z-index: 1;
-                font-size: 50px;
+                font-size: 1.5em;
                 overflow: hidden;
                 min-width: 900px;
                 padding-left: 150px;
@@ -562,7 +584,7 @@
                 color: white;
                 padding: 12px 16px;
                 display: block;
-                font-size: 50px;
+                font-size: 1.5em;
                 overflow: hidden;
             }
             
@@ -590,14 +612,14 @@
             }
             
             .text {
-                font-size: 1.2em;
+                font-size: 1.9em;
                 line-height: 1.6;
                 color: white;
                 margin-bottom: 0px;
                 justify-content: center;
                 padding-bottom: 0px;
                 margin-right: 60px;
-                font-family: 'Aboreto', sans-serif;
+                font-family: 'IM Fell French Canon', serif;
             }
             
             .image-container {
@@ -610,6 +632,14 @@
             .about-me1 {
                 width: 100%;
                 /* Add this for debugging */
+            }
+            
+            .contact {
+                font-family: 'Aboreto', sans-serif;
+            }
+            
+            h2.container2 {
+                font-family: 'Aboreto', sans-serif;
             }
             
             @media (max-width: 768px) {
