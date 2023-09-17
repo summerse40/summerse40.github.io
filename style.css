@@ -113,7 +113,7 @@
             
             .container p {
                 margin: 5px 0;
-                font-size: 17px;
+                font-size: 15px;
             }
             
             .container {
@@ -463,7 +463,7 @@
                 margin-right: 10px;
                 word-wrap: break-word;
                 overflow-wrap: break-word;
-                font-size: 30px;
+                font-size: 25px;
                 font-family: 'IM Fell French Canon', serif;
             }
             
@@ -482,7 +482,7 @@
             }
             
             .text-container p {
-                font-size: 1.5em;
+                font-size: 1.3em;
                 line-height: 1.6;
                 color: white;
                 margin-bottom: 0px;
@@ -504,7 +504,7 @@
             }
             
             .dropdown-content p {
-                font-size: 23px;
+                font-size: 20px;
                 line-height: 1.6;
                 color: white;
                 margin-bottom: 1.5em;
