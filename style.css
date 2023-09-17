@@ -642,214 +642,6 @@
                 font-family: 'Aboreto', sans-serif;
             }
             
-            @media (max-width: 768px) {
-                .mention blockquote,
-                p {
-                    font-size: 10px;
-                }
-                .mention p {
-                    font-size: 10px;
-                }
-                .carousel:hover {
-                    background-color: #001F3F;
-                }
-                .text-container {
-                    max-width: 500px;
-                }
-                .text-container h1 {
-                    font-family: 'Georgia', serif;
-                    font-size: 80px;
-                    color: white;
-                    /* Yellow */
-                    font-weight: bold;
-                    text-shadow: 8px 8px 1px rgba(0, 0, 0, 0.5);
-                    padding-bottom: 10px;
-                }
-                .text-container p {
-                    font-size: 1.2em;
-                    line-height: 1.6;
-                    color: white;
-                }
-                .pdf-container {
-                    display: none;
-                }
-                .pdf-download {
-                    display: block;
-                    text-align: center;
-                    margin-top: 20px;
-                }
-                #header {
-                    padding-bottom: 20px;
-                }
-                h1 {
-                    margin: 0;
-                    padding-top: 10px;
-                }
-                .container {
-                    margin-top: -10px;
-                    padding-bottom: 0px;
-                }
-                .overlap-image img {
-                    width: 500x;
-                }
-                .container h1 {
-                    font-size: 1.5em;
-                }
-                .containers {
-                    border-radius: 40px;
-                    padding: 15px;
-                    margin: 8px;
-                    height: auto;
-                    min-height: 200px;
-                }
-                .menu-toggle {
-                    display: flex;
-                    margin: 0 auto;
-                }
-                h1 {
-                    font-size: 1.2em;
-                    padding-top: 10px;
-                }
-                .container {
-                    margin-top: 0;
-                    padding-bottom: 20px;
-                }
-                .overlap-image img {
-                    width: 300px;
-                }
-                /* About Me Section */
-                .text-container {
-                    max-width: 90%;
-                }
-                /* Portfolio Section */
-                .carousel-content {
-                    font-size: 14px;
-                }
-                /* Skills Section */
-                .skill-card {
-                    font-size: 14px;
-                }
-                /* Public Mentions Section */
-                .mention p {
-                    font-size: 14px;
-                }
-                /* Contact Section */
-                .btn {
-                    font-size: 14px;
-                    border-radius: none;
-                }
-                /* Menu Toggle */
-                .menu-toggle {
-                    display: none;
-                }
-                .image-container img {
-                    max-width: 200px;
-                    /* or any size you prefer */
-                    height: auto;
-                    /* maintains aspect ratio */
-                    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-                    border-width: 2px;
-                    box-shadow: 0 15px 20px #001F3F;
-                    border: 4px solid white;
-                    border-radius: 30px;
-                    padding-left: 0 auto;
-                }
-                .image-container {
-                    margin-right: 15px;
-                    object-fit: cover;
-                    /* or contain */
-                }
-                .dropdown-content {
-                    margin-left: -130px;
-                    margin-right: -120px;
-                    orientation: center;
-                }
-                .about-me1,
-                .dropdown,
-                .mydropdown {
-                    max-width: 100%;
-                    word-wrap: break-word;
-                    /* Breaks the words nicely */
-                    padding: 0px;
-                    /* Add some padding around the text */
-                    margin: 0 auto;
-                    border: 2px solid red;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-                .text {
-                    width: 100%;
-                    height: 100%;
-                    white-space: normal;
-                    line-height: 1.5;
-                    padding-right: -120px;
-                    /* or whatever multiplier fills the box */
-                }
-            }
-            /* Tablet styles//////////////// Missing alignment of the button */
-            /*
-                    @media screen and (min-width: 718px) {
-                        .menu-toggle {
-                            display: none;
-                            margin: 0 auto;
-                        }
-                        .dropbtn {
-                            font-size: 16px;
-                            padding: 12px;
-                            border-radius: 0px;
-                            margin: 0 auto;
-                        }
-                        .about-me1 {
-                            text-align: center;
-        }
-    }
-    */
-            /* Small desktop styles */
-            
-            @media screen and (min-width: 1024px) {
-                body {
-                    font-size: 20px;
-                    /* Adjust styles for small desktop screens if needed */
-                }
-                /* Portfolio Section */
-                .carousel-content {
-                    font-size: 16px;
-                }
-                /* Skills Section */
-                .skill-card {
-                    font-size: 16px;
-                }
-                /* Public Mentions Section */
-                .mention p {
-                    font-size: 16px;
-                }
-            }
-            /* Mobile phones */
-            /* Medium desktop styles */
-            
-            @media screen and (min-width: 1280px) {
-                body {
-                    font-size: 22px;
-                    /* Adjust styles for medium desktop screens if needed */
-                }
-            }
-            /* Large desktop styles */
-            
-            @media screen and (min-width: 1440px) {
-                body {
-                    font-size: 24px;
-                    /* Adjust styles for large desktop screens if needed */
-                }
-            }
-            /* Extra large display styles (4K) */
-            
-            @media screen and (min-width: 3840px) {
-                body {
-                    font-size: 26px;
-                    /* Adjust styles for 4K screens if needed */
-                }
-            }
-            
             @media (max-width: 480px) {
                 #myParagraph {
                     font-size: 10px;
@@ -1003,7 +795,7 @@
                     border-radius: 65px;
                 }
                 .dropdown-content p {
-                    font-size: 14px;
+                    font-size: 10px;
                 }
                 .container2 {
                     font-size: 10px;
@@ -1019,6 +811,358 @@
                 }
                 #h1 {
                     font-size: 20px;
+                }
+            }
+            /* Small desktop styles */
+            
+            @media (max-width: 600px) {
+                .mention blockquote,
+                p {
+                    font-size: 10px;
+                }
+                .mention p {
+                    font-size: 10px;
+                }
+                .carousel:hover {
+                    background-color: #001F3F;
+                }
+                .text-container {
+                    max-width: 500px;
+                }
+                .text-container h1 {
+                    font-family: 'Georgia', serif;
+                    font-size: 80px;
+                    color: white;
+                    /* Yellow */
+                    font-weight: bold;
+                    text-shadow: 8px 8px 1px rgba(0, 0, 0, 0.5);
+                    padding-bottom: 10px;
+                }
+                .text-container p {
+                    font-size: 1.2em;
+                    line-height: 1.6;
+                    color: white;
+                }
+                .pdf-container {
+                    display: none;
+                }
+                .pdf-download {
+                    display: block;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                #header {
+                    padding-bottom: 20px;
+                }
+                h1 {
+                    margin: 0;
+                    padding-top: 10px;
+                }
+                .container {
+                    margin-top: -10px;
+                    padding-bottom: 0px;
+                }
+                .overlap-image img {
+                    width: 500x;
+                }
+                .container h1 {
+                    font-size: 1.5em;
+                }
+                .containers {
+                    border-radius: 40px;
+                    padding: 15px;
+                    margin: 8px;
+                    height: auto;
+                    min-height: 200px;
+                }
+                .menu-toggle {
+                    display: flex;
+                    margin: 0 auto;
+                }
+                h1 {
+                    font-size: 1.2em;
+                    padding-top: 10px;
+                }
+                .container {
+                    margin-top: 0;
+                    padding-bottom: 20px;
+                }
+                .overlap-image img {
+                    width: 300px;
+                }
+                /* About Me Section */
+                .text-container {
+                    max-width: 90%;
+                }
+                /* Portfolio Section */
+                .carousel-content {
+                    font-size: 14px;
+                }
+                /* Skills Section */
+                .skill-card {
+                    font-size: 14px;
+                }
+                /* Public Mentions Section */
+                .mention p {
+                    font-size: 14px;
+                }
+                /* Contact Section */
+                .btn {
+                    font-size: 14px;
+                    border-radius: none;
+                }
+                /* Menu Toggle */
+                .menu-toggle {
+                    display: none;
+                }
+                .image-container {
+                    margin-right: 15px;
+                    object-fit: cover;
+                    /* or contain */
+                }
+                .dropdown-content p {
+                    font-size: 18px;
+                }
+                /* About Me Section */
+                .text {
+                    max-width: 90%;
+                }
+                .dropdown,
+                .mydropdown {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: auto;
+                    background-color: #A41648;
+                    border-color: white;
+                    border-width: 2px;
+                    box-shadow: #001F3F;
+                    padding-top: 200px;
+                    padding-bottom: 70px;
+                    font-family: 'IM Fell French Canon', serif;
+                }
+                .about-me1 {
+                    padding-top: 80px;
+                    font-family: 'IM Fell French Canon', serif;
+                }
+                #about-content {
+                    font-family: 'Aboreto', sans-serif;
+                    overflow: hidden;
+                    white-space: pre-line;
+                    width: 100%;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                    font-size: 30px;
+                    font-family: 'IM Fell French Canon', serif;
+                }
+                .text-container {
+                    max-width: 900px;
+                    padding-bottom: 0px;
+                }
+            }
+            
+            @media (max-width: 768px) {
+                .mention blockquote,
+                p {
+                    font-size: 10px;
+                }
+                .mention p {
+                    font-size: 10px;
+                }
+                .carousel:hover {
+                    background-color: #001F3F;
+                }
+                .text-container {
+                    max-width: 500px;
+                }
+                .text-container h1 {
+                    font-family: 'Georgia', serif;
+                    font-size: 80px;
+                    color: white;
+                    /* Yellow */
+                    font-weight: bold;
+                    text-shadow: 8px 8px 1px rgba(0, 0, 0, 0.5);
+                    padding-bottom: 10px;
+                }
+                .text-container p {
+                    font-size: 1.2em;
+                    line-height: 1.6;
+                    color: white;
+                }
+                .pdf-container {
+                    display: none;
+                }
+                .pdf-download {
+                    display: block;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                #header {
+                    padding-bottom: 20px;
+                }
+                h1 {
+                    margin: 0;
+                    padding-top: 10px;
+                }
+                .container {
+                    margin-top: -10px;
+                    padding-bottom: 0px;
+                }
+                .overlap-image img {
+                    width: 500x;
+                }
+                .container h1 {
+                    font-size: 1.5em;
+                }
+                .containers {
+                    border-radius: 40px;
+                    padding: 15px;
+                    margin: 8px;
+                    height: auto;
+                    min-height: 200px;
+                }
+                .menu-toggle {
+                    display: flex;
+                    margin: 0 auto;
+                }
+                h1 {
+                    font-size: 1.2em;
+                    padding-top: 10px;
+                }
+                .container {
+                    margin-top: 0;
+                    padding-bottom: 20px;
+                }
+                .overlap-image img {
+                    width: 300px;
+                }
+                /* About Me Section */
+                .text-container {
+                    max-width: 90%;
+                }
+                /* Portfolio Section */
+                .carousel-content {
+                    font-size: 14px;
+                }
+                /* Skills Section */
+                .skill-card {
+                    font-size: 14px;
+                }
+                /* Public Mentions Section */
+                .mention p {
+                    font-size: 14px;
+                }
+                /* Contact Section */
+                .btn {
+                    font-size: 14px;
+                    border-radius: none;
+                }
+                /* Menu Toggle */
+                .menu-toggle {
+                    display: none;
+                }
+                .image-container img {
+                    max-width: 200px;
+                    /* or any size you prefer */
+                    height: auto;
+                    /* maintains aspect ratio */
+                    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+                    border-width: 2px;
+                    box-shadow: 0 15px 20px #001F3F;
+                    border: 4px solid white;
+                    border-radius: 30px;
+                    padding-left: 0 auto;
+                }
+                .image-container {
+                    margin-right: 15px;
+                    object-fit: cover;
+                    /* or contain */
+                }
+                .dropdown-content {
+                    margin-left: -130px;
+                    margin-right: -120px;
+                    orientation: center;
+                }
+                .about-me1,
+                .dropdown,
+                .mydropdown {
+                    max-width: 100%;
+                    word-wrap: break-word;
+                    /* Breaks the words nicely */
+                    padding: 0px;
+                    /* Add some padding around the text */
+                    margin: 0 auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .text {
+                    width: 100%;
+                    height: 100%;
+                    white-space: normal;
+                    line-height: 1.5;
+                    padding-right: -120px;
+                    /* or whatever multiplier fills the box */
+                }
+            }
+            
+            @media screen and (min-width: 1024px) {
+                body {
+                    font-size: 20px;
+                    /* Adjust styles for small desktop screens if needed */
+                }
+                /* Portfolio Section */
+                .carousel-content {
+                    font-size: 16px;
+                }
+                /* Skills Section */
+                .skill-card {
+                    font-size: 16px;
+                }
+                /* Public Mentions Section */
+                .mention p {
+                    font-size: 16px;
+                }
+                .image-container {
+                    float: left;
+                    /* Float the image to the left */
+                    margin-right: 85px;
+                    /* Add some right margin for spacing */
+                    margin-bottom: 4px;
+                    /* Add some bottom margin for spacing */
+                }
+            }
+            /* Mobile phones */
+            /* Medium desktop styles */
+            
+            @media screen and (min-width: 1280px) {
+                body {
+                    font-size: 22px;
+                    /* Adjust styles for medium desktop screens if needed */
+                }
+                .image-container {
+                    float: left;
+                    /* Float the image to the left */
+                    margin-right: 200px;
+                    /* Add some right margin for spacing */
+                    margin-bottom: 4px;
+                    /* Add some bottom margin for spacing */
+                    size-adjust: 0px;
+                }
+            }
+            /* Large desktop styles */
+            
+            @media screen and (min-width: 1440px) {
+                body {
+                    font-size: 24px;
+                    /* Adjust styles for large desktop screens if needed */
+                }
+            }
+            /* Extra large display styles (4K) */
+            
+            @media screen and (min-width: 3840px) {
+                body {
+                    font-size: 26px;
+                    /* Adjust styles for 4K screens if needed */
                 }
             }
             /* Ultra large display styles (8K) */
