@@ -126,7 +126,7 @@ function myFunction1() {
 }
 
 
-function burgerf() {
+document.addEventListener("DOMContentLoaded", function() { // Make sure the DOM is fully loaded
     const mobileMenuButton = document.getElementById('mobile-menu');
     const navList = document.querySelector('.nav-list');
     const navItems = document.querySelectorAll('.nav-list li'); // Assuming your items are in <li> tags
@@ -142,4 +142,4 @@ function burgerf() {
             navList.classList.remove('active');
         });
     });
-}
+});
