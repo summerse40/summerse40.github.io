@@ -520,6 +520,15 @@
                     border-radius: 30px;
                 }
                 
+                .image-container2 img {
+                    max-width: 300px;
+                    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+                    border-width: 2px;
+                    box-shadow: 0 15px 20px #001F3F;
+                    border: 4px solid white;
+                    border-radius: 30px;
+                }
+                
                 .nav .nav-list {
                     list-style-type: none;
                     display: flex;
@@ -602,11 +611,19 @@
                 
                 .image-container {
                     float: left;
-                    /* Float the image to the left */
                     margin-right: 0px;
-                    /* Add some right margin for spacing */
                     margin-bottom: 4px;
-                    /* Add some bottom margin for spacing */
+                }
+                
+                .image-container2 {
+                    float: right;
+                    margin-left: 10px;
+                    margin-bottom: 4px;
+                }
+                
+                .text {
+                    padding-top: 20px;
+                    /* Adjust this value to move the image down */
                 }
                 /* Text styling */
                 
@@ -627,8 +644,10 @@
                 
                 .image-container {
                     width: 30%;
-                    /* Set to your preference */
-                    /* other styles */
+                }
+                
+                .image-container2 {
+                    width: 30%;
                 }
                 
                 .dropdown-content,
@@ -780,6 +799,21 @@
                     }
                     .image-container {
                         margin-right: 15px;
+                        object-fit: cover;
+                        padding-bottom: 10px;
+                    }
+                    .image-container2 img {
+                        max-width: 180px;
+                        height: auto;
+                        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+                        border-width: 2px;
+                        box-shadow: 0 15px 20px #001F3F;
+                        border: 4px solid white;
+                        border-radius: 30px;
+                        padding-right: 0 auto;
+                    }
+                    .image-container2 {
+                        margin-left: 15px;
                         object-fit: cover;
                         padding-bottom: 10px;
                     }
@@ -948,6 +982,22 @@
                         /* Add some bottom margin for spacing */
                     }
                     .image-container img {
+                        max-width: 200px;
+                        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+                        border-width: 2px;
+                        box-shadow: 0 15px 20px #001F3F;
+                        border: 4px solid white;
+                        border-radius: 30px;
+                    }
+                    .image-container2 {
+                        float: center;
+                        /* Float the image to the left */
+                        margin-left: 0px;
+                        /* Add some right margin for spacing */
+                        margin-bottom: 4px;
+                        /* Add some bottom margin for spacing */
+                    }
+                    .image-container2 img {
                         max-width: 200px;
                         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
                         border-width: 2px;
@@ -1306,6 +1356,21 @@
                     }
                     .image-container {
                         margin-right: 15px;
+                        object-fit: cover;
+                        padding-bottom: 10px;
+                    }
+                    .image-container2 img {
+                        max-width: 180px;
+                        height: auto;
+                        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+                        border-width: 2px;
+                        box-shadow: 0 15px 20px #001F3F;
+                        border: 4px solid white;
+                        border-radius: 30px;
+                        padding-left: 0 auto;
+                    }
+                    .image-container2 {
+                        margin-left: 15px;
                         object-fit: cover;
                         padding-bottom: 10px;
                     }
