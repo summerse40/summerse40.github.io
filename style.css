@@ -612,12 +612,12 @@
                 .image-container {
                     float: left;
                     margin-right: 0px;
-                    margin-bottom: 4px;
+                    margin-bottom: 15px;
                 }
                 
                 .image-container2 {
                     float: right;
-                    margin-left: 10px;
+                    margin-left: 4px;
                     margin-bottom: 4px;
                     margin-right: 60px;
                 }
