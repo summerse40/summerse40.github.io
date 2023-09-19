@@ -861,12 +861,12 @@
                     }
                     .overlap-image img {
                         width: 180px;
+                        z-index: 1;
                         height: auto;
                         border-radius: 50%;
                         border: 5px solid white;
                         box-shadow: 0 15px 20px #001F3F;
                         ;
-                        z-index: 1;
                     }
                     /* finalized adjustments for hamburger */
                     .menu-toggle {
@@ -876,7 +876,7 @@
                         /* Adjust as needed */
                         left: 20px;
                         /* Adjust as needed */
-                        z-index: 2;
+                        z-index: 999;
                     }
                     #name {
                         text-align: center;
@@ -889,16 +889,17 @@
                     }
                     .menu-toggle {
                         display: flex;
+                        Z-index: 10000;
+                        position: absolute;
                         /* Show the hamburger menu */
                     }
                     .nav-list.active {
                         display: flex;
                         /* Show the navigation list when active */
                         flex-direction: column;
-                        /* Make it vertical */
-                        z-index: 1000;
                         background-color: #001F3F;
                         z-index: 1000;
+                        position: relative;
                     }
                     .container {
                         height: 190px;
@@ -1083,6 +1084,9 @@
                         white-space: normal;
                         line-height: 1.5;
                         max-width: auto;
+                    }
+                    .overlap-image {
+                        z-index: 3;
                     }
                 }
                 
