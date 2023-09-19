@@ -125,12 +125,21 @@ function myFunction1() {
     }
 }
 
-
 function burgerf() {
     const navList = document.querySelector('.nav-list');
-    const container = document.querySelector('.container');
+    const navItems = document.querySelectorAll('.nav-list li');
 
+    // Toggle menu open/close when burger icon is clicked
     navList.classList.toggle('active');
-    container.classList.toggle('expanded'); // Toggle the expanded class on the container
-    overlap - image.classList.toggle('expanded');
+
+    // Close menu when a navigation item is clicked
+    navItems.forEach(function(navItem) {
+        navItem.addEventListener('click', function() {
+            navList.classList.remove('active');
+        });
+    });
 }
+
+// Attach the burgerf function to the mobile menu button's click event
+const mobileMenuButton = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', burgerf);
