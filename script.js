@@ -126,20 +126,8 @@ function myFunction1() {
 }
 
 
-document.addEventListener("DOMContentLoaded", function() { // Make sure the DOM is fully loaded
-    const mobileMenuButton = document.getElementById('mobile-menu');
+function burgerf() {
     const navList = document.querySelector('.nav-list');
-    const navItems = document.querySelectorAll('.nav-list li'); // Assuming your items are in <li> tags
-
     // Toggle menu open/close when burger icon is clicked
-    mobileMenuButton.addEventListener('click', function() {
-        navList.classList.toggle('active');
-    });
-
-    // Close menu when a navigation item is clicked
-    navItems.forEach(function(navItem) {
-        navItem.addEventListener('click', function() {
-            navList.classList.remove('active');
-        });
-    });
-});
+    navList.classList.toggle('active');
+}

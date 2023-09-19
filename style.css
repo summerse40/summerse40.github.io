@@ -878,12 +878,24 @@
                         /* Adjust as needed */
                         z-index: 2;
                     }
-                    .nav .nav-list {
-                        display: none;
-                    }
                     #name {
                         text-align: center;
                         /* Aligns the name to the right */
+                    }
+                    .nav .nav-list {
+                        display: none;
+                        /* Hide the navigation list */
+                    }
+                    .menu-toggle {
+                        display: flex;
+                        /* Show the hamburger menu */
+                    }
+                    .nav-list.active {
+                        display: flex;
+                        /* Show the navigation list when active */
+                        flex-direction: column;
+                        /* Make it vertical */
+                        z-index: 1;
                     }
                 }
                 
