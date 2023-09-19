@@ -538,7 +538,10 @@
                 }
                 
                 .nav .nav-list li a:hover {
+                    /* or any other color */
                     color: white;
+                    font-weight: bold;
+                    /* Optional, adds a little space around the text */
                 }
                 /* Mobile menu */
                 
