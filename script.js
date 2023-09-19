@@ -128,6 +128,9 @@ function myFunction1() {
 
 function burgerf() {
     const navList = document.querySelector('.nav-list');
-    // Toggle menu open/close when burger icon is clicked
+    const container = document.querySelector('.container');
+
     navList.classList.toggle('active');
+    container.classList.toggle('expanded'); // Toggle the expanded class on the container
+    overlap - image.classList.toggle('expanded');
 }
