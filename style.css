@@ -132,7 +132,7 @@
                     color: #fff;
                     text-align: center;
                     padding-top: 40px;
-                    border: 10px solid white;
+                    border: 10px solid black;
                     height: 270px;
                     width: auto;
                     padding: 10px 0;
@@ -219,12 +219,12 @@
                     padding: 20px;
                     border-radius: 50px;
                     box-shadow: 0 15px 20px #001F3F;
-                    background-color: black;
+                    background-color: #001F3F;
                     font-family: 'IM Fell French Canon', serif;
                 }
                 
                 .skills-section:hover {
-                    background-color: #001F3F;
+                    background-color: whitesmoke;
                     font-family: 'IM Fell French Canon', serif;
                 }
                 
@@ -391,12 +391,12 @@
                     align-items: center;
                     max-width: 800px;
                     margin: 50px auto;
-                    border: 1px solid white;
+                    border: 1px solid black;
                     border-width: 4px;
                     padding: 20px;
                     position: relative;
-                    background-color: black;
-                    box-shadow: 0 15px 20px #001F3F;
+                    background-color: #001F3F;
+                    box-shadow: 0 15px 20px whitesmoke;
                     border-radius: 3%;
                     font-family: 'IM Fell French Canon', serif;
                 }
@@ -440,7 +440,7 @@
                     box-shadow: black;
                     padding-top: 200px;
                     padding-bottom: 70px;
-                    color: black;
+                    color: #001F3F;
                     font-family: 'IM Fell French Canon', serif;
                 }
                 
