@@ -52,7 +52,7 @@
                     width: 250px;
                     height: auto;
                     border-radius: 50%;
-                    border: 5px solid white;
+                    border: 5px solid black;
                     box-shadow: 0 15px 20px #001F3F;
                     ;
                     z-index: 2;
@@ -121,7 +121,7 @@
                     color: #fff;
                     text-align: center;
                     padding-top: 40px;
-                    border: 10px solid white;
+                    border: 10px solid black;
                     height: 270px;
                     width: auto;
                     padding: 10px 0;
@@ -135,9 +135,6 @@
                     border: 10px solid white;
                     height: 270px;
                     width: auto;
-                    /* or whatever height you prefer */
-                    /* This can help vertically center text if that's all you have in the header */
-                    /* Or you could use padding */
                     padding: 10px 0;
                 }
                 
@@ -149,7 +146,7 @@
                     margin: 12;
                     margin-left: 12;
                     margin-right: 12;
-                    background-color: #D1A5A4;
+                    background-color: white;
                     border-radius: 80px;
                     box-shadow: 0 15px 20px #001F3F;
                     border: 4px solid white;
@@ -240,10 +237,10 @@
                 }
                 
                 .skill-card {
-                    border: 1px solid #D1A5A4;
+                    border: 1px solid white;
                     border-radius: 5px;
                     padding: 15px;
-                    box-shadow: 0 2px 4px #D1A5A4;
+                    box-shadow: 0 2px 4px white;
                     transition: box-shadow 0.3s ease;
                     background-color: black;
                     font-family: 'IM Fell French Canon', serif;
@@ -288,7 +285,7 @@
                 /* Tablets */
                 
                 .public-mentions {
-                    background-color: wheat;
+                    background-color: white;
                     padding: 50px 0;
                     font-family: 'IM Fell French Canon', serif;
                 }
@@ -342,11 +339,8 @@
                 
                 .pdf-container {
                     display: block;
-                    /* Show the embedded PDF container */
                     width: 100%;
-                    /* Adjust the width as needed */
                     height: 400px;
-                    /* Adjust the height as needed */
                     overflow: hidden;
                 }
                 
@@ -440,12 +434,13 @@
                     align-items: center;
                     justify-content: center;
                     height: auto;
-                    background-color: black;
+                    background-color: white;
                     border-color: white;
                     border-width: 2px;
-                    box-shadow: #001F3F;
+                    box-shadow: black;
                     padding-top: 200px;
                     padding-bottom: 70px;
+                    color: black;
                     font-family: 'IM Fell French Canon', serif;
                 }
                 
@@ -475,16 +470,15 @@
                 .text-container h1 {
                     font-family: 'Georgia', serif;
                     font-size: 64px;
-                    color: white;
+                    color: black;
                     /* Yellow */
                     font-weight: bold;
-                    text-shadow: 12px 12px 2px rgba(0, 0, 0, 0.5);
                 }
                 
                 .text-container p {
                     font-size: 1.3em;
                     line-height: 1.6;
-                    color: white;
+                    color: black;
                     margin-bottom: 0px;
                     padding-bottom: 0px;
                     font-family: 'IM Fell French Canon', serif;
@@ -496,7 +490,7 @@
                     justify-content: center;
                     height: auto;
                     /* adjust based on your preference */
-                    background-color: black;
+                    background-color: white;
                     border-color: white;
                     border-width: 2px;
                     box-shadow: #001F3F;
@@ -506,7 +500,7 @@
                 .dropdown-content p {
                     font-size: 20px;
                     line-height: 1.6;
-                    color: white;
+                    color: black;
                     margin-bottom: 1.5em;
                     font-family: 'IM Fell French Canon', serif;
                 }
@@ -516,7 +510,7 @@
                     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
                     border-width: 2px;
                     box-shadow: 0 15px 20px #001F3F;
-                    border: 4px solid white;
+                    border: 4px solid black;
                     border-radius: 30px;
                 }
                 
@@ -525,7 +519,7 @@
                     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
                     border-width: 2px;
                     box-shadow: 0 15px 20px #001F3F;
-                    border: 4px solid white;
+                    border: 4px solid black;
                     border-radius: 30px;
                 }
                 
@@ -570,8 +564,8 @@
                 }
                 
                 .dropbtn {
-                    background-color: white;
-                    color: #001F3F;
+                    background-color: black;
+                    color: white;
                     padding: 16px;
                     margin-bottom: 20px;
                     font-size: 18px;
@@ -680,9 +674,6 @@
                         width: 200px;
                         height: auto;
                         border-radius: 50%;
-                        border: 5px solid white;
-                        box-shadow: 0 15px 20px #001F3F;
-                        ;
                         z-index: 2;
                     }
                     /*navigation list in header*/
@@ -696,9 +687,6 @@
                     .mention p {
                         font-size: 10px;
                     }
-                    .carousel:hover {
-                        background-color: #001F3F;
-                    }
                     .text-container {
                         max-width: 500px;
                     }
@@ -708,13 +696,11 @@
                         color: white;
                         /* Yellow */
                         font-weight: bold;
-                        text-shadow: 8px 8px 1px rgba(0, 0, 0, 0.5);
                         padding-bottom: 10px;
                     }
                     .text-container p {
                         font-size: 1.2em;
                         line-height: 1.6;
-                        color: white;
                     }
                     .pdf-container {
                         display: none;
@@ -791,10 +777,7 @@
                     .image-container img {
                         max-width: 180px;
                         height: auto;
-                        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
                         border-width: 2px;
-                        box-shadow: 0 15px 20px #001F3F;
-                        border: 4px solid white;
                         border-radius: 30px;
                         padding-left: 0 auto;
                     }
@@ -806,10 +789,7 @@
                     .image-container2 img {
                         max-width: 180px;
                         height: auto;
-                        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
                         border-width: 2px;
-                        box-shadow: 0 15px 20px #001F3F;
-                        border: 4px solid white;
                         border-radius: 30px;
                         padding-right: 0 auto;
                     }
@@ -860,11 +840,7 @@
                     }
                     .nav .nav-list li a {
                         text-decoration: none;
-                        color: #F5F5F5;
                         transition: color 0.4s ease-in-out;
-                    }
-                    .nav .nav-list li a:hover {
-                        color: white;
                     }
                     /* Mobile menu */
                     .menu-toggle {
@@ -875,7 +851,6 @@
                         margin-top: 10px;
                     }
                     .bar {
-                        background: white;
                         height: 4px;
                         width: 25px;
                         border-radius: 2px;
@@ -883,10 +858,8 @@
                     .text-container h1 {
                         font-family: 'Georgia', serif;
                         font-size: 50px;
-                        color: white;
                         /* Yellow */
                         font-weight: bold;
-                        text-shadow: 12px 12px 2px rgba(0, 0, 0, 0.5);
                     }
                     .overlap-image {
                         position: absolute;
@@ -902,8 +875,6 @@
                         z-index: 1;
                         height: auto;
                         border-radius: 50%;
-                        border: 5px solid white;
-                        box-shadow: 0 15px 20px #001F3F;
                         ;
                     }
                     /* finalized adjustments for hamburger */
@@ -935,7 +906,6 @@
                         display: flex;
                         /* Show the navigation list when active */
                         flex-direction: column;
-                        background-color: #001F3F;
                         z-index: 1000;
                         position: relative;
                     }
@@ -958,9 +928,7 @@
                         display: flex;
                         position: center;
                         top: 150px;
-                        /* Adjust as needed */
                         left: 135px;
-                        /* Adjust as needed */
                         z-index: 2;
                         margin-bottom: 10px;
                     }
@@ -968,42 +936,28 @@
                         width: 150px;
                         height: auto;
                         border-radius: 50%;
-                        border: 5px solid white;
-                        box-shadow: 0 15px 20px #001F3F;
                         ;
                         z-index: 0;
                         padding-top: 0 auto;
                     }
                     .image-container {
                         float: center;
-                        /* Float the image to the left */
                         margin-right: 0px;
-                        /* Add some right margin for spacing */
                         margin-bottom: 4px;
-                        /* Add some bottom margin for spacing */
                     }
                     .image-container img {
                         max-width: 200px;
-                        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
                         border-width: 2px;
-                        box-shadow: 0 15px 20px #001F3F;
-                        border: 4px solid white;
                         border-radius: 30px;
                     }
                     .image-container2 {
                         float: center;
-                        /* Float the image to the left */
                         margin-left: 0px;
-                        /* Add some right margin for spacing */
                         margin-bottom: 4px;
-                        /* Add some bottom margin for spacing */
                     }
                     .image-container2 img {
                         max-width: 200px;
-                        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
                         border-width: 2px;
-                        box-shadow: 0 15px 20px #001F3F;
-                        border: 4px solid white;
                         border-radius: 30px;
                     }
                     .container {
@@ -1019,8 +973,6 @@
                         z-index: 1000;
                         margin-bottom: 20px;
                         margin-top: 20px;
-                        color: black;
-                        /* You may use 'absolute' if it works better for your layout */
                     }
                 }
                 
@@ -1237,8 +1189,6 @@
                         width: 200px;
                         height: auto;
                         border-radius: 50%;
-                        border: 5px solid white;
-                        box-shadow: 0 15px 20px #001F3F;
                         ;
                         z-index: 2;
                     }
@@ -1253,9 +1203,6 @@
                     .mention p {
                         font-size: 10px;
                     }
-                    .carousel:hover {
-                        background-color: #001F3F;
-                    }
                     .text-container {
                         max-width: 500px;
                     }
@@ -1265,7 +1212,6 @@
                         color: white;
                         /* Yellow */
                         font-weight: bold;
-                        text-shadow: 8px 8px 1px rgba(0, 0, 0, 0.5);
                         padding-bottom: 10px;
                     }
                     .text-container p {
@@ -1348,10 +1294,7 @@
                     .image-container img {
                         max-width: 180px;
                         height: auto;
-                        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
                         border-width: 2px;
-                        box-shadow: 0 15px 20px #001F3F;
-                        border: 4px solid white;
                         border-radius: 30px;
                         padding-left: 0 auto;
                     }
@@ -1363,10 +1306,7 @@
                     .image-container2 img {
                         max-width: 180px;
                         height: auto;
-                        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
                         border-width: 2px;
-                        box-shadow: 0 15px 20px #001F3F;
-                        border: 4px solid white;
                         border-radius: 30px;
                         padding-left: 0 auto;
                     }
