@@ -996,8 +996,6 @@
                         width: 140px;
                         height: auto;
                         border-radius: 50%;
-                        border: 5px solid white;
-                        box-shadow: 0 15px 20px #001F3F;
                         ;
                         z-index: 2;
                     }
@@ -1209,7 +1207,6 @@
                     .text-container h1 {
                         font-family: 'Georgia', serif;
                         font-size: 80px;
-                        color: white;
                         /* Yellow */
                         font-weight: bold;
                         padding-bottom: 10px;
@@ -1217,7 +1214,6 @@
                     .text-container p {
                         font-size: 1.2em;
                         line-height: 1.6;
-                        color: white;
                     }
                     .pdf-container {
                         display: none;
